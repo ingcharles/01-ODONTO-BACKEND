@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Fx3YoJ8BHURfkQqbi+gmG2DK2cit8jABKgUqmhZhWPJEB6hmZharC0e5oATKPDlGQunsY10yn5O2ZBdCI6HppA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\CARLOS\\source\\repos\\01-ODONTO-BACKEND\\OdontoBackend.Infrastructure.Contracts\\OdontoBackend.Infrastructure.Contracts.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\CARLOS\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\CARLOS\\.nuget\\packages\\npgsql\\7.0.4\\npgsql.7.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}

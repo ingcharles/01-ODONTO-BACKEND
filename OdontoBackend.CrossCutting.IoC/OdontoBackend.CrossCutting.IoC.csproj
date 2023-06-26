@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OdontoBackend.Aplicacion\OdontoBackend.Aplicacion.csproj" />
+    <ProjectReference Include="..\OdontoBackend.Infrastructure.Contracts\OdontoBackend.Infrastructure.Contracts.csproj" />
+    <ProjectReference Include="..\OdontoBackend.Infrastructure\OdontoBackend.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

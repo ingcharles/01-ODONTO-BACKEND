@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OdontoBackend.Aplication.Entities\OdontoBackend.Aplication.Entities.csproj" />
+    <ProjectReference Include="..\OdontoBackend.Domain\OdontoBackend.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

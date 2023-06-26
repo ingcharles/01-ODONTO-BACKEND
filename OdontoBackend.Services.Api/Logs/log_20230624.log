@@ -1,0 +1,1354 @@
+Information:  24/6/2023 02:23:42 -> 14 - Now listening on: https://localhost:7003
+Information:  24/6/2023 02:23:43 -> 14 - Now listening on: http://localhost:5187
+Information:  24/6/2023 02:23:43 -> 0 - Application started. Press Ctrl+C to shut down.
+Information:  02:24 -> 14 - Now listening on: https://localhost:7003
+Information:  02:24 -> 14 - Now listening on: http://localhost:5187
+Information:  02:24 -> 0 - Application started. Press Ctrl+C to shut down.
+Information:  02:24 -> 0 - Hosting environment: Development
+Information:  02:24 -> 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information:  21 -> 14 - Now listening on: https://localhost:7003
+Information:  21 -> 14 - Now listening on: http://localhost:5187
+Information:  21 -> 0 - Application started. Press Ctrl+C to shut down.
+Information:  21 -> 0 - Hosting environment: Development
+Information:  21 -> 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 09:29:16 - 14 - Now listening on: https://localhost:7003
+Information: 09:29:21 - 14 - Now listening on: http://localhost:5187
+Information: 09:29:21 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 09:29:21 - 0 - Hosting environment: Development
+Information: 09:29:21 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 21:29:58 - 14 - Now listening on: https://localhost:7003
+Information: 21:29:58 - 14 - Now listening on: http://localhost:5187
+Information: 21:29:58 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 21:29:58 - 0 - Hosting environment: Development
+Information: 21:29:58 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Error: 21:30:25 - 0 - Hello, world!
+Warning: 21:30:27 - 0 - Hello, world!aaa
+Information: 22:09:28 - 14 - Now listening on: https://localhost:7003
+Information: 22:09:32 - 14 - Now listening on: http://localhost:5187
+Information: 22:09:32 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 22:09:32 - 0 - Hosting environment: Development
+Information: 22:09:32 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 22:11:17 - 14 - Now listening on: https://localhost:7003
+Information: 22:11:17 - 14 - Now listening on: http://localhost:5187
+Information: 22:11:17 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 22:11:17 - 0 - Hosting environment: Development
+Information: 22:11:17 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Error: 22:11:30 - 0 - System.InvalidOperationException: Unable to resolve service for type 'OdontoBackend.Aplicacion.Services.Contracts.ICatalogoService' while attempting to activate 'OdontoBackend.Services.Api.Controllers.CatalogoController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at OdontoBackend.Common.Logs.ExceptionHandler.Invoke(HttpContext context) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\ExceptionHandler.cs:line 32
+Error: 22:11:33 - 0 - System.InvalidOperationException: Unable to resolve service for type 'OdontoBackend.Aplicacion.Services.Contracts.ICatalogoService' while attempting to activate 'OdontoBackend.Services.Api.Controllers.CatalogoController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at OdontoBackend.Common.Logs.ExceptionHandler.Invoke(HttpContext context) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\ExceptionHandler.cs:line 32
+Error: 22:12:08 - 0 - System.InvalidOperationException: Unable to resolve service for type 'OdontoBackend.Aplicacion.Services.Contracts.ICatalogoService' while attempting to activate 'OdontoBackend.Services.Api.Controllers.CatalogoController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at OdontoBackend.Common.Logs.ExceptionHandler.Invoke(HttpContext context) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\ExceptionHandler.cs:line 32
+Error: 22:12:09 - 0 - System.InvalidOperationException: Unable to resolve service for type 'OdontoBackend.Aplicacion.Services.Contracts.ICatalogoService' while attempting to activate 'OdontoBackend.Services.Api.Controllers.CatalogoController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at OdontoBackend.Common.Logs.ExceptionHandler.Invoke(HttpContext context) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\ExceptionHandler.cs:line 32
+Error: 22:12:10 - 0 - System.InvalidOperationException: Unable to resolve service for type 'OdontoBackend.Aplicacion.Services.Contracts.ICatalogoService' while attempting to activate 'OdontoBackend.Services.Api.Controllers.CatalogoController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at OdontoBackend.Common.Logs.ExceptionHandler.Invoke(HttpContext context) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\ExceptionHandler.cs:line 32
+Information: 22:13:32 - 14 - Now listening on: https://localhost:7003
+Information: 22:13:32 - 14 - Now listening on: http://localhost:5187
+Information: 22:13:32 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 22:13:32 - 0 - Hosting environment: Development
+Information: 22:13:32 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Error: 22:13:51 - 0 - System.ArgumentException: Couldn't set data source (Parameter 'data source')
+ ---> System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at Npgsql.NpgsqlConnectionStringBuilder.GeneratedSetter(String keyword, Object value)
+   at Npgsql.NpgsqlConnectionStringBuilder.set_Item(String keyword, Object value)
+   --- End of inner exception stack trace ---
+   at Npgsql.NpgsqlConnectionStringBuilder.set_Item(String keyword, Object value)
+   at System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   at Npgsql.NpgsqlConnectionStringBuilder..ctor(String connectionString)
+   at Npgsql.NpgsqlConnection.SetupDataSource()
+   at Npgsql.NpgsqlConnection.set_ConnectionString(String value)
+   at Npgsql.NpgsqlConnection..ctor(String connectionString)
+   at OdontoBackend.Infrastructure.Context.ContextDatabase.GetConnection() in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Context\ContextDatabase.cs:line 114
+   at OdontoBackend.Infrastructure.Repository.CatalogoRepository.GetCatalogoByCodUni(Catalogo request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Repository\CatalogoRepository.cs:line 25
+   at OdontoBackend.Aplicacion.Services.CatalogoService.GetCatalogoByCodUni(Task`1 request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Aplicacion\Services\CatalogoService.cs:line 33
+   at OdontoBackend.Services.Api.Controllers.CatalogoController.GetCatalogoByCodUni(CatalogoByCodUniQuery request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\Controllers\CatalogoController.cs:line 30
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at OdontoBackend.Common.Logs.ExceptionHandler.Invoke(HttpContext context) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\ExceptionHandler.cs:line 32
+Information: 22:17:37 - 14 - Now listening on: https://localhost:7003
+Information: 22:17:37 - 14 - Now listening on: http://localhost:5187
+Information: 22:17:37 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 22:17:37 - 0 - Hosting environment: Development
+Information: 22:17:37 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 22:18:02 - 14 - Now listening on: https://localhost:7003
+Information: 22:18:02 - 14 - Now listening on: http://localhost:5187
+Information: 22:18:02 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 22:18:02 - 0 - Hosting environment: Development
+Information: 22:18:02 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 22:20:52 - 14 - Now listening on: https://localhost:7003
+Information: 22:20:52 - 14 - Now listening on: http://localhost:5187
+Information: 22:20:52 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 22:20:52 - 0 - Hosting environment: Development
+Information: 22:20:52 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 22:21:16 - 14 - Now listening on: https://localhost:7003
+Information: 22:21:16 - 14 - Now listening on: http://localhost:5187
+Information: 22:21:16 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 22:21:16 - 0 - Hosting environment: Development
+Information: 22:21:16 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 22:22:21 - 14 - Now listening on: https://localhost:7003
+Information: 22:22:21 - 14 - Now listening on: http://localhost:5187
+Information: 22:22:21 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 22:22:21 - 0 - Hosting environment: Development
+Information: 22:22:21 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 22:23:15 - 14 - Now listening on: https://localhost:7003
+Information: 22:23:15 - 14 - Now listening on: http://localhost:5187
+Information: 22:23:15 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 22:23:15 - 0 - Hosting environment: Development
+Information: 22:23:15 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 22:23:56 - 14 - Now listening on: https://localhost:7003
+Information: 22:23:57 - 14 - Now listening on: http://localhost:5187
+Information: 22:23:57 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 22:23:57 - 0 - Hosting environment: Development
+Information: 22:23:57 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 22:24:48 - 14 - Now listening on: https://localhost:7003
+Information: 22:24:48 - 14 - Now listening on: http://localhost:5187
+Information: 22:24:48 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 22:24:48 - 0 - Hosting environment: Development
+Information: 22:24:48 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 22:25:07 - 14 - Now listening on: https://localhost:7003
+Information: 22:25:07 - 14 - Now listening on: http://localhost:5187
+Information: 22:25:07 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 22:25:07 - 0 - Hosting environment: Development
+Information: 22:25:07 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 22:51:16 - 14 - Now listening on: https://localhost:7003
+Information: 22:51:16 - 14 - Now listening on: http://localhost:5187
+Information: 22:51:16 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 22:51:16 - 0 - Hosting environment: Development
+Information: 22:51:16 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 22:51:47 - 14 - Now listening on: https://localhost:7003
+Information: 22:51:47 - 14 - Now listening on: http://localhost:5187
+Information: 22:51:47 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 22:51:47 - 0 - Hosting environment: Development
+Information: 22:51:47 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 22:53:43 - 14 - Now listening on: https://localhost:7003
+Information: 22:53:43 - 14 - Now listening on: http://localhost:5187
+Information: 22:53:43 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 22:53:43 - 0 - Hosting environment: Development
+Information: 22:53:43 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 22:54:41 - 14 - Now listening on: https://localhost:7003
+Information: 22:54:41 - 14 - Now listening on: http://localhost:5187
+Information: 22:54:41 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 22:54:41 - 0 - Hosting environment: Development
+Information: 22:54:41 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 22:55:57 - 14 - Now listening on: https://localhost:7003
+Information: 22:55:57 - 14 - Now listening on: http://localhost:5187
+Information: 22:55:57 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 22:55:57 - 0 - Hosting environment: Development
+Information: 22:55:57 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Error: 22:57:03 - 0 - Npgsql.PostgresException (0x80004005): 42883: no existe el procedimiento «g_catalogos.prueba1(integer, f1 => unknown, f2 => unknown)»
+
+POSITION: 6
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|234_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at OdontoBackend.Infrastructure.Context.ContextDatabase.ExecuteList[T](pkg pkg, NpgsqlCommand comando, String& err) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Context\ContextDatabase.cs:line 38
+   at OdontoBackend.Infrastructure.Repository.CatalogoRepository.GetCatalogoByCodUni(Catalogo request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Repository\CatalogoRepository.cs:line 44
+   at OdontoBackend.Aplicacion.Services.CatalogoService.GetCatalogoByCodUni(Task`1 request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Aplicacion\Services\CatalogoService.cs:line 33
+   at OdontoBackend.Services.Api.Controllers.CatalogoController.GetCatalogoByCodUni(CatalogoByCodUniQuery request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\Controllers\CatalogoController.cs:line 30
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at OdontoBackend.Common.Logs.ExceptionHandler.Invoke(HttpContext context) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\ExceptionHandler.cs:line 32
+  Exception data:
+    Severity: ERROR
+    SqlState: 42883
+    MessageText: no existe el procedimiento «g_catalogos.prueba1(integer, f1 => unknown, f2 => unknown)»
+    Hint: Ningún procedimiento coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversión explícita de tipos.
+    Position: 6
+    File: d:\pginstaller_13.auto\postgres.windows-x64\src\backend\parser\parse_func.c
+    Line: 618
+    Routine: ParseFuncOrColumn
+Information: 23:00:33 - 14 - Now listening on: https://localhost:7003
+Information: 23:00:33 - 14 - Now listening on: http://localhost:5187
+Information: 23:00:33 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 23:00:33 - 0 - Hosting environment: Development
+Information: 23:00:33 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Error: 23:00:45 - 0 - Npgsql.PostgresException (0x80004005): 42883: no existe el procedimiento «g_catalogos.prueba1(integer, f1 => unknown, f2 => unknown)»
+
+POSITION: 6
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|234_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at OdontoBackend.Infrastructure.Context.ContextDatabase.ExecuteList[T](pkg pkg, NpgsqlCommand comando, String& err) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Context\ContextDatabase.cs:line 38
+   at OdontoBackend.Infrastructure.Repository.CatalogoRepository.GetCatalogoByCodUni(Catalogo request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Repository\CatalogoRepository.cs:line 44
+   at OdontoBackend.Aplicacion.Services.CatalogoService.GetCatalogoByCodUni(Task`1 request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Aplicacion\Services\CatalogoService.cs:line 33
+   at OdontoBackend.Services.Api.Controllers.CatalogoController.GetCatalogoByCodUni(CatalogoByCodUniQuery request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\Controllers\CatalogoController.cs:line 30
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at OdontoBackend.Common.Logs.ExceptionHandler.Invoke(HttpContext context) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\ExceptionHandler.cs:line 32
+  Exception data:
+    Severity: ERROR
+    SqlState: 42883
+    MessageText: no existe el procedimiento «g_catalogos.prueba1(integer, f1 => unknown, f2 => unknown)»
+    Hint: Ningún procedimiento coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversión explícita de tipos.
+    Position: 6
+    File: d:\pginstaller_13.auto\postgres.windows-x64\src\backend\parser\parse_func.c
+    Line: 618
+    Routine: ParseFuncOrColumn
+Information: 23:06:48 - 14 - Now listening on: https://localhost:7003
+Information: 23:06:48 - 14 - Now listening on: http://localhost:5187
+Information: 23:06:48 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 23:06:48 - 0 - Hosting environment: Development
+Information: 23:06:48 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Error: 23:07:50 - 0 - Npgsql.PostgresException (0x80004005): 42601: la consulta no tiene un destino para los datos de resultado
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|234_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at OdontoBackend.Infrastructure.Context.ContextDatabase.ExecuteList[T](pkg pkg, NpgsqlCommand comando, String& err) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Context\ContextDatabase.cs:line 38
+   at OdontoBackend.Infrastructure.Repository.CatalogoRepository.GetCatalogoByCodUni(Catalogo request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Repository\CatalogoRepository.cs:line 44
+   at OdontoBackend.Aplicacion.Services.CatalogoService.GetCatalogoByCodUni(Task`1 request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Aplicacion\Services\CatalogoService.cs:line 33
+   at OdontoBackend.Services.Api.Controllers.CatalogoController.GetCatalogoByCodUni(CatalogoByCodUniQuery request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\Controllers\CatalogoController.cs:line 30
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at OdontoBackend.Common.Logs.ExceptionHandler.Invoke(HttpContext context) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\ExceptionHandler.cs:line 32
+  Exception data:
+    Severity: ERROR
+    SqlState: 42601
+    MessageText: la consulta no tiene un destino para los datos de resultado
+    Hint: Si quiere descartar los resultados de un SELECT, utilice PERFORM.
+    Where: función PL/pgSQL g_catalogos.prueba1(integer,integer,text) en la línea 6 en sentencia SQL
+    File: d:\pginstaller_13.auto\postgres.windows-x64\src\pl\plpgsql\src\pl_exec.c
+    Line: 4372
+    Routine: exec_stmt_execsql
+Error: 23:08:06 - 0 - Npgsql.PostgresException (0x80004005): 42601: la consulta no tiene un destino para los datos de resultado
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|234_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at OdontoBackend.Infrastructure.Context.ContextDatabase.ExecuteList[T](pkg pkg, NpgsqlCommand comando, String& err) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Context\ContextDatabase.cs:line 38
+   at OdontoBackend.Infrastructure.Repository.CatalogoRepository.GetCatalogoByCodUni(Catalogo request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Repository\CatalogoRepository.cs:line 44
+   at OdontoBackend.Aplicacion.Services.CatalogoService.GetCatalogoByCodUni(Task`1 request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Aplicacion\Services\CatalogoService.cs:line 33
+   at OdontoBackend.Services.Api.Controllers.CatalogoController.GetCatalogoByCodUni(CatalogoByCodUniQuery request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\Controllers\CatalogoController.cs:line 30
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at OdontoBackend.Common.Logs.ExceptionHandler.Invoke(HttpContext context) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\ExceptionHandler.cs:line 32
+  Exception data:
+    Severity: ERROR
+    SqlState: 42601
+    MessageText: la consulta no tiene un destino para los datos de resultado
+    Hint: Si quiere descartar los resultados de un SELECT, utilice PERFORM.
+    Where: función PL/pgSQL g_catalogos.prueba1(integer,integer,text) en la línea 6 en sentencia SQL
+    File: d:\pginstaller_13.auto\postgres.windows-x64\src\pl\plpgsql\src\pl_exec.c
+    Line: 4372
+    Routine: exec_stmt_execsql
+Information: 23:08:58 - 14 - Now listening on: https://localhost:7003
+Information: 23:08:58 - 14 - Now listening on: http://localhost:5187
+Information: 23:08:58 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 23:08:58 - 0 - Hosting environment: Development
+Information: 23:08:58 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Error: 23:09:25 - 0 - Npgsql.PostgresException (0x80004005): 42601: la consulta no tiene un destino para los datos de resultado
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|234_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at OdontoBackend.Infrastructure.Context.ContextDatabase.ExecuteList[T](pkg pkg, NpgsqlCommand comando, String& err) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Context\ContextDatabase.cs:line 38
+   at OdontoBackend.Infrastructure.Repository.CatalogoRepository.GetCatalogoByCodUni(Catalogo request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Repository\CatalogoRepository.cs:line 44
+   at OdontoBackend.Aplicacion.Services.CatalogoService.GetCatalogoByCodUni(Task`1 request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Aplicacion\Services\CatalogoService.cs:line 33
+   at OdontoBackend.Services.Api.Controllers.CatalogoController.GetCatalogoByCodUni(CatalogoByCodUniQuery request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\Controllers\CatalogoController.cs:line 30
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at OdontoBackend.Common.Logs.ExceptionHandler.Invoke(HttpContext context) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\ExceptionHandler.cs:line 32
+  Exception data:
+    Severity: ERROR
+    SqlState: 42601
+    MessageText: la consulta no tiene un destino para los datos de resultado
+    Hint: Si quiere descartar los resultados de un SELECT, utilice PERFORM.
+    Where: función PL/pgSQL g_catalogos.prueba1(integer,integer,text) en la línea 6 en sentencia SQL
+    File: d:\pginstaller_13.auto\postgres.windows-x64\src\pl\plpgsql\src\pl_exec.c
+    Line: 4372
+    Routine: exec_stmt_execsql
+Information: 23:12:45 - 14 - Now listening on: https://localhost:7003
+Information: 23:12:45 - 14 - Now listening on: http://localhost:5187
+Information: 23:12:45 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 23:12:45 - 0 - Hosting environment: Development
+Information: 23:12:45 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 23:16:40 - 14 - Now listening on: https://localhost:7003
+Information: 23:16:40 - 14 - Now listening on: http://localhost:5187
+Information: 23:16:40 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 23:16:40 - 0 - Hosting environment: Development
+Information: 23:16:40 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Error: 23:16:56 - 0 - Npgsql.PostgresException (0x80004005): 42601: la consulta no tiene un destino para los datos de resultado
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|234_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at OdontoBackend.Infrastructure.Context.ContextDatabase.ExecuteList[T](pkg pkg, NpgsqlCommand comando, String& err) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Context\ContextDatabase.cs:line 38
+   at OdontoBackend.Infrastructure.Repository.CatalogoRepository.GetCatalogoByCodUni(Catalogo request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Repository\CatalogoRepository.cs:line 44
+   at OdontoBackend.Aplicacion.Services.CatalogoService.GetCatalogoByCodUni(Task`1 request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Aplicacion\Services\CatalogoService.cs:line 33
+   at OdontoBackend.Services.Api.Controllers.CatalogoController.GetCatalogoByCodUni(CatalogoByCodUniQuery request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\Controllers\CatalogoController.cs:line 30
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at OdontoBackend.Common.Logs.ExceptionHandler.Invoke(HttpContext context) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\ExceptionHandler.cs:line 32
+  Exception data:
+    Severity: ERROR
+    SqlState: 42601
+    MessageText: la consulta no tiene un destino para los datos de resultado
+    Hint: Si quiere descartar los resultados de un SELECT, utilice PERFORM.
+    Where: función PL/pgSQL g_catalogos.prueba1(integer,integer) en la línea 7 en sentencia SQL
+    File: d:\pginstaller_13.auto\postgres.windows-x64\src\pl\plpgsql\src\pl_exec.c
+    Line: 4372
+    Routine: exec_stmt_execsql
+Error: 23:18:34 - 0 - Npgsql.PostgresException (0x80004005): 42601: la consulta no tiene un destino para los datos de resultado
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|234_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at OdontoBackend.Infrastructure.Context.ContextDatabase.ExecuteList[T](pkg pkg, NpgsqlCommand comando, String& err) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Context\ContextDatabase.cs:line 38
+   at OdontoBackend.Infrastructure.Repository.CatalogoRepository.GetCatalogoByCodUni(Catalogo request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Repository\CatalogoRepository.cs:line 44
+   at OdontoBackend.Aplicacion.Services.CatalogoService.GetCatalogoByCodUni(Task`1 request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Aplicacion\Services\CatalogoService.cs:line 33
+   at OdontoBackend.Services.Api.Controllers.CatalogoController.GetCatalogoByCodUni(CatalogoByCodUniQuery request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\Controllers\CatalogoController.cs:line 30
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at OdontoBackend.Common.Logs.ExceptionHandler.Invoke(HttpContext context) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\ExceptionHandler.cs:line 32
+  Exception data:
+    Severity: ERROR
+    SqlState: 42601
+    MessageText: la consulta no tiene un destino para los datos de resultado
+    Hint: Si quiere descartar los resultados de un SELECT, utilice PERFORM.
+    Where: función PL/pgSQL g_catalogos.prueba1(integer,integer) en la línea 7 en sentencia SQL
+    File: d:\pginstaller_13.auto\postgres.windows-x64\src\pl\plpgsql\src\pl_exec.c
+    Line: 4372
+    Routine: exec_stmt_execsql
+Error: 23:18:40 - 0 - Npgsql.PostgresException (0x80004005): 42601: la consulta no tiene un destino para los datos de resultado
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|234_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at OdontoBackend.Infrastructure.Context.ContextDatabase.ExecuteList[T](pkg pkg, NpgsqlCommand comando, String& err) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Context\ContextDatabase.cs:line 38
+   at OdontoBackend.Infrastructure.Repository.CatalogoRepository.GetCatalogoByCodUni(Catalogo request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Repository\CatalogoRepository.cs:line 44
+   at OdontoBackend.Aplicacion.Services.CatalogoService.GetCatalogoByCodUni(Task`1 request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Aplicacion\Services\CatalogoService.cs:line 33
+   at OdontoBackend.Services.Api.Controllers.CatalogoController.GetCatalogoByCodUni(CatalogoByCodUniQuery request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\Controllers\CatalogoController.cs:line 30
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at OdontoBackend.Common.Logs.ExceptionHandler.Invoke(HttpContext context) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\ExceptionHandler.cs:line 32
+  Exception data:
+    Severity: ERROR
+    SqlState: 42601
+    MessageText: la consulta no tiene un destino para los datos de resultado
+    Hint: Si quiere descartar los resultados de un SELECT, utilice PERFORM.
+    Where: función PL/pgSQL g_catalogos.prueba1(integer,integer) en la línea 7 en sentencia SQL
+    File: d:\pginstaller_13.auto\postgres.windows-x64\src\pl\plpgsql\src\pl_exec.c
+    Line: 4372
+    Routine: exec_stmt_execsql
+Information: 23:19:42 - 14 - Now listening on: https://localhost:7003
+Information: 23:19:42 - 14 - Now listening on: http://localhost:5187
+Information: 23:19:42 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 23:19:42 - 0 - Hosting environment: Development
+Information: 23:19:42 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 23:21:27 - 14 - Now listening on: https://localhost:7003
+Information: 23:21:27 - 14 - Now listening on: http://localhost:5187
+Information: 23:21:27 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 23:21:27 - 0 - Hosting environment: Development
+Information: 23:21:27 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 23:22:15 - 14 - Now listening on: https://localhost:7003
+Information: 23:22:15 - 14 - Now listening on: http://localhost:5187
+Information: 23:22:15 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 23:22:15 - 0 - Hosting environment: Development
+Information: 23:22:15 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 23:22:37 - 14 - Now listening on: https://localhost:7003
+Information: 23:22:37 - 14 - Now listening on: http://localhost:5187
+Information: 23:22:37 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 23:22:37 - 0 - Hosting environment: Development
+Information: 23:22:37 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 23:22:57 - 14 - Now listening on: https://localhost:7003
+Information: 23:22:57 - 14 - Now listening on: http://localhost:5187
+Information: 23:22:57 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 23:22:57 - 0 - Hosting environment: Development
+Information: 23:22:57 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Error: 23:23:09 - 0 - Npgsql.PostgresException (0x80004005): 42601: la consulta no tiene un destino para los datos de resultado
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|234_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at OdontoBackend.Infrastructure.Context.ContextDatabase.ExecuteList[T](pkg pkg, NpgsqlCommand comando, String& err) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Context\ContextDatabase.cs:line 38
+   at OdontoBackend.Infrastructure.Repository.CatalogoRepository.GetCatalogoByCodUni(Catalogo request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Repository\CatalogoRepository.cs:line 44
+   at OdontoBackend.Aplicacion.Services.CatalogoService.GetCatalogoByCodUni(Task`1 request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Aplicacion\Services\CatalogoService.cs:line 33
+   at OdontoBackend.Services.Api.Controllers.CatalogoController.GetCatalogoByCodUni(CatalogoByCodUniQuery request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\Controllers\CatalogoController.cs:line 30
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at OdontoBackend.Common.Logs.ExceptionHandler.Invoke(HttpContext context) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\ExceptionHandler.cs:line 32
+  Exception data:
+    Severity: ERROR
+    SqlState: 42601
+    MessageText: la consulta no tiene un destino para los datos de resultado
+    Hint: Si quiere descartar los resultados de un SELECT, utilice PERFORM.
+    Where: función PL/pgSQL g_catalogos.prueba1(integer) en la línea 7 en sentencia SQL
+    File: d:\pginstaller_13.auto\postgres.windows-x64\src\pl\plpgsql\src\pl_exec.c
+    Line: 4372
+    Routine: exec_stmt_execsql
+Information: 23:32:42 - 14 - Now listening on: https://localhost:7003
+Information: 23:32:42 - 14 - Now listening on: http://localhost:5187
+Information: 23:32:42 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 23:32:42 - 0 - Hosting environment: Development
+Information: 23:32:42 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 00:01:58 - 14 - Now listening on: https://localhost:7003
+Information: 00:01:58 - 14 - Now listening on: http://localhost:5187
+Information: 00:01:58 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 00:01:58 - 0 - Hosting environment: Development
+Information: 00:01:58 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 00:04:01 - 14 - Now listening on: https://localhost:7003
+Information: 00:04:01 - 14 - Now listening on: http://localhost:5187
+Information: 00:04:01 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 00:04:01 - 0 - Hosting environment: Development
+Information: 00:04:01 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 00:05:42 - 14 - Now listening on: https://localhost:7003
+Information: 00:05:42 - 14 - Now listening on: http://localhost:5187
+Information: 00:05:42 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 00:05:42 - 0 - Hosting environment: Development
+Information: 00:05:42 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Error: 00:06:10 - 0 - System.InvalidCastException: Parameter _result_one must be set
+   at Npgsql.NpgsqlParameter.ValidateAndGetLength()
+   at Npgsql.NpgsqlParameterCollection.ProcessParameters(TypeMapper typeMapper, Boolean validateValues, CommandType commandType)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at OdontoBackend.Infrastructure.Context.ContextDatabase.ExecuteList[T](pkg pkg, NpgsqlCommand comando, String& err) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Context\ContextDatabase.cs:line 38
+   at OdontoBackend.Infrastructure.Repository.CatalogoRepository.GetCatalogoByCodUni(Catalogo request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Repository\CatalogoRepository.cs:line 44
+   at OdontoBackend.Aplicacion.Services.CatalogoService.GetCatalogoByCodUni(Task`1 request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Aplicacion\Services\CatalogoService.cs:line 33
+   at OdontoBackend.Services.Api.Controllers.CatalogoController.GetCatalogoByCodUni(CatalogoByCodUniQuery request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\Controllers\CatalogoController.cs:line 30
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at OdontoBackend.Common.Logs.ExceptionHandler.Invoke(HttpContext context) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\ExceptionHandler.cs:line 32
+Information: 00:08:00 - 14 - Now listening on: https://localhost:7003
+Information: 00:08:00 - 14 - Now listening on: http://localhost:5187
+Information: 00:08:00 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 00:08:00 - 0 - Hosting environment: Development
+Information: 00:08:00 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 00:09:50 - 14 - Now listening on: https://localhost:7003
+Information: 00:09:50 - 14 - Now listening on: http://localhost:5187
+Information: 00:09:50 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 00:09:50 - 0 - Hosting environment: Development
+Information: 00:09:50 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 00:12:08 - 14 - Now listening on: https://localhost:7003
+Information: 00:12:08 - 14 - Now listening on: http://localhost:5187
+Information: 00:12:08 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 00:12:08 - 0 - Hosting environment: Development
+Information: 00:12:08 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 00:15:24 - 14 - Now listening on: https://localhost:7003
+Information: 00:15:24 - 14 - Now listening on: http://localhost:5187
+Information: 00:15:24 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 00:15:24 - 0 - Hosting environment: Development
+Information: 00:15:24 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 00:19:10 - 14 - Now listening on: https://localhost:7003
+Information: 00:19:10 - 14 - Now listening on: http://localhost:5187
+Information: 00:19:10 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 00:19:10 - 0 - Hosting environment: Development
+Information: 00:19:10 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 00:19:46 - 14 - Now listening on: https://localhost:7003
+Information: 00:19:46 - 14 - Now listening on: http://localhost:5187
+Information: 00:19:46 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 00:19:46 - 0 - Hosting environment: Development
+Information: 00:19:46 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 00:20:16 - 14 - Now listening on: https://localhost:7003
+Information: 00:20:16 - 14 - Now listening on: http://localhost:5187
+Information: 00:20:16 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 00:20:16 - 0 - Hosting environment: Development
+Information: 00:20:16 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 00:21:09 - 14 - Now listening on: https://localhost:7003
+Information: 00:21:09 - 14 - Now listening on: http://localhost:5187
+Information: 00:21:09 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 00:21:09 - 0 - Hosting environment: Development
+Information: 00:21:09 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 00:22:17 - 14 - Now listening on: https://localhost:7003
+Information: 00:22:17 - 14 - Now listening on: http://localhost:5187
+Information: 00:22:17 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 00:22:17 - 0 - Hosting environment: Development
+Information: 00:22:17 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 00:22:57 - 14 - Now listening on: https://localhost:7003
+Information: 00:22:57 - 14 - Now listening on: http://localhost:5187
+Information: 00:22:57 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 00:22:57 - 0 - Hosting environment: Development
+Information: 00:22:57 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Error: 00:23:13 - 0 - System.InvalidCastException: Parameter _result_one must be set
+   at Npgsql.NpgsqlParameter.ValidateAndGetLength()
+   at Npgsql.NpgsqlParameterCollection.ProcessParameters(TypeMapper typeMapper, Boolean validateValues, CommandType commandType)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at OdontoBackend.Infrastructure.Context.ContextDatabase.ExecuteList[T](pkg pkg, NpgsqlCommand comando, String& err) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Context\ContextDatabase.cs:line 38
+   at OdontoBackend.Infrastructure.Repository.CatalogoRepository.GetCatalogoByCodUni(Catalogo request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Repository\CatalogoRepository.cs:line 45
+   at OdontoBackend.Aplicacion.Services.CatalogoService.GetCatalogoByCodUni(Task`1 request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Aplicacion\Services\CatalogoService.cs:line 33
+   at OdontoBackend.Services.Api.Controllers.CatalogoController.GetCatalogoByCodUni(CatalogoByCodUniQuery request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\Controllers\CatalogoController.cs:line 30
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at OdontoBackend.Common.Logs.ExceptionHandler.Invoke(HttpContext context) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\ExceptionHandler.cs:line 32
+Information: 00:23:26 - 14 - Now listening on: https://localhost:7003
+Information: 00:23:26 - 14 - Now listening on: http://localhost:5187
+Information: 00:23:26 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 00:23:26 - 0 - Hosting environment: Development
+Information: 00:23:26 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Error: 00:23:51 - 0 - System.InvalidCastException: Parameter _result_one must be set
+   at Npgsql.NpgsqlParameter.ValidateAndGetLength()
+   at Npgsql.NpgsqlParameterCollection.ProcessParameters(TypeMapper typeMapper, Boolean validateValues, CommandType commandType)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at OdontoBackend.Infrastructure.Context.ContextDatabase.ExecuteList[T](pkg pkg, NpgsqlCommand comando, String& err) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Context\ContextDatabase.cs:line 38
+   at OdontoBackend.Infrastructure.Repository.CatalogoRepository.GetCatalogoByCodUni(Catalogo request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Repository\CatalogoRepository.cs:line 45
+   at OdontoBackend.Aplicacion.Services.CatalogoService.GetCatalogoByCodUni(Task`1 request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Aplicacion\Services\CatalogoService.cs:line 33
+   at OdontoBackend.Services.Api.Controllers.CatalogoController.GetCatalogoByCodUni(CatalogoByCodUniQuery request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\Controllers\CatalogoController.cs:line 30
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at OdontoBackend.Common.Logs.ExceptionHandler.Invoke(HttpContext context) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\ExceptionHandler.cs:line 32
+Information: 00:26:01 - 14 - Now listening on: https://localhost:7003
+Information: 00:26:01 - 14 - Now listening on: http://localhost:5187
+Information: 00:26:01 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 00:26:01 - 0 - Hosting environment: Development
+Information: 00:26:01 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 00:26:23 - 14 - Now listening on: https://localhost:7003
+Information: 00:26:23 - 14 - Now listening on: http://localhost:5187
+Information: 00:26:23 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 00:26:23 - 0 - Hosting environment: Development
+Information: 00:26:23 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Error: 00:28:03 - 0 - Npgsql.PostgresException (0x80004005): 42883: no existe el procedimiento «g_catalogos.prueba1(_itemID => integer)»
+
+POSITION: 6
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|234_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at OdontoBackend.Infrastructure.Context.ContextDatabase.ExecuteList[T](pkg pkg, NpgsqlCommand comando, String& err) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Context\ContextDatabase.cs:line 38
+   at OdontoBackend.Infrastructure.Repository.CatalogoRepository.GetCatalogoByCodUni(Catalogo request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Repository\CatalogoRepository.cs:line 45
+   at OdontoBackend.Aplicacion.Services.CatalogoService.GetCatalogoByCodUni(Task`1 request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Aplicacion\Services\CatalogoService.cs:line 33
+   at OdontoBackend.Services.Api.Controllers.CatalogoController.GetCatalogoByCodUni(CatalogoByCodUniQuery request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\Controllers\CatalogoController.cs:line 30
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at OdontoBackend.Common.Logs.ExceptionHandler.Invoke(HttpContext context) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\ExceptionHandler.cs:line 32
+  Exception data:
+    Severity: ERROR
+    SqlState: 42883
+    MessageText: no existe el procedimiento «g_catalogos.prueba1(_itemID => integer)»
+    Hint: Ningún procedimiento coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversión explícita de tipos.
+    Position: 6
+    File: d:\pginstaller_13.auto\postgres.windows-x64\src\backend\parser\parse_func.c
+    Line: 618
+    Routine: ParseFuncOrColumn
+Information: 00:28:57 - 14 - Now listening on: https://localhost:7003
+Information: 00:28:57 - 14 - Now listening on: http://localhost:5187
+Information: 00:28:57 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 00:28:57 - 0 - Hosting environment: Development
+Information: 00:28:57 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 00:30:14 - 14 - Now listening on: https://localhost:7003
+Information: 00:30:14 - 14 - Now listening on: http://localhost:5187
+Information: 00:30:14 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 00:30:14 - 0 - Hosting environment: Development
+Information: 00:30:14 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 00:31:50 - 14 - Now listening on: https://localhost:7003
+Information: 00:31:50 - 14 - Now listening on: http://localhost:5187
+Information: 00:31:50 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 00:31:50 - 0 - Hosting environment: Development
+Information: 00:31:50 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 00:34:14 - 14 - Now listening on: https://localhost:7003
+Information: 00:34:14 - 14 - Now listening on: http://localhost:5187
+Information: 00:34:14 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 00:34:14 - 0 - Hosting environment: Development
+Information: 00:34:14 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Error: 00:34:46 - 0 - Npgsql.PostgresException (0x80004005): 42883: no existe el procedimiento «g_catalogos.prueba1(_itemID => integer)»
+
+POSITION: 6
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|234_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at OdontoBackend.Infrastructure.Context.ContextDatabase.ExecuteList[T](pkg pkg, NpgsqlCommand comando, String& err) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Context\ContextDatabase.cs:line 38
+   at OdontoBackend.Infrastructure.Repository.CatalogoRepository.GetCatalogoByCodUni(Catalogo request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Repository\CatalogoRepository.cs:line 45
+   at OdontoBackend.Aplicacion.Services.CatalogoService.GetCatalogoByCodUni(Task`1 request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Aplicacion\Services\CatalogoService.cs:line 33
+   at OdontoBackend.Services.Api.Controllers.CatalogoController.GetCatalogoByCodUni(CatalogoByCodUniQuery request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\Controllers\CatalogoController.cs:line 30
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at OdontoBackend.Common.Logs.ExceptionHandler.Invoke(HttpContext context) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\ExceptionHandler.cs:line 32
+  Exception data:
+    Severity: ERROR
+    SqlState: 42883
+    MessageText: no existe el procedimiento «g_catalogos.prueba1(_itemID => integer)»
+    Hint: Ningún procedimiento coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversión explícita de tipos.
+    Position: 6
+    File: d:\pginstaller_13.auto\postgres.windows-x64\src\backend\parser\parse_func.c
+    Line: 618
+    Routine: ParseFuncOrColumn
+Information: 00:34:50 - 14 - Now listening on: https://localhost:7003
+Information: 00:34:50 - 14 - Now listening on: http://localhost:5187
+Information: 00:34:50 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 00:34:50 - 0 - Hosting environment: Development
+Information: 00:34:50 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Error: 00:35:16 - 0 - Npgsql.PostgresException (0x80004005): 42883: no existe el procedimiento «g_catalogos.prueba1(_itemID => integer)»
+
+POSITION: 6
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|234_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at OdontoBackend.Infrastructure.Context.ContextDatabase.ExecuteList[T](pkg pkg, NpgsqlCommand comando, String& err) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Context\ContextDatabase.cs:line 38
+   at OdontoBackend.Infrastructure.Repository.CatalogoRepository.GetCatalogoByCodUni(Catalogo request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Repository\CatalogoRepository.cs:line 45
+   at OdontoBackend.Aplicacion.Services.CatalogoService.GetCatalogoByCodUni(Task`1 request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Aplicacion\Services\CatalogoService.cs:line 33
+   at OdontoBackend.Services.Api.Controllers.CatalogoController.GetCatalogoByCodUni(CatalogoByCodUniQuery request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\Controllers\CatalogoController.cs:line 30
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at OdontoBackend.Common.Logs.ExceptionHandler.Invoke(HttpContext context) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\ExceptionHandler.cs:line 32
+  Exception data:
+    Severity: ERROR
+    SqlState: 42883
+    MessageText: no existe el procedimiento «g_catalogos.prueba1(_itemID => integer)»
+    Hint: Ningún procedimiento coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversión explícita de tipos.
+    Position: 6
+    File: d:\pginstaller_13.auto\postgres.windows-x64\src\backend\parser\parse_func.c
+    Line: 618
+    Routine: ParseFuncOrColumn
+Information: 00:36:27 - 14 - Now listening on: https://localhost:7003
+Information: 00:36:27 - 14 - Now listening on: http://localhost:5187
+Information: 00:36:27 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 00:36:27 - 0 - Hosting environment: Development
+Information: 00:36:27 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Error: 00:37:14 - 0 - System.InvalidCastException: Parameter aa must be set
+   at Npgsql.NpgsqlParameter.ValidateAndGetLength()
+   at Npgsql.NpgsqlParameterCollection.ProcessParameters(TypeMapper typeMapper, Boolean validateValues, CommandType commandType)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at OdontoBackend.Infrastructure.Context.ContextDatabase.ExecuteList[T](pkg pkg, NpgsqlCommand comando, String& err) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Context\ContextDatabase.cs:line 38
+   at OdontoBackend.Infrastructure.Repository.CatalogoRepository.GetCatalogoByCodUni(Catalogo request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Repository\CatalogoRepository.cs:line 45
+   at OdontoBackend.Aplicacion.Services.CatalogoService.GetCatalogoByCodUni(Task`1 request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Aplicacion\Services\CatalogoService.cs:line 33
+   at OdontoBackend.Services.Api.Controllers.CatalogoController.GetCatalogoByCodUni(CatalogoByCodUniQuery request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\Controllers\CatalogoController.cs:line 30
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at OdontoBackend.Common.Logs.ExceptionHandler.Invoke(HttpContext context) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\ExceptionHandler.cs:line 32
+Error: 00:37:31 - 0 - System.InvalidCastException: Parameter aa must be set
+   at Npgsql.NpgsqlParameter.ValidateAndGetLength()
+   at Npgsql.NpgsqlParameterCollection.ProcessParameters(TypeMapper typeMapper, Boolean validateValues, CommandType commandType)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at OdontoBackend.Infrastructure.Context.ContextDatabase.ExecuteList[T](pkg pkg, NpgsqlCommand comando, String& err) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Context\ContextDatabase.cs:line 38
+   at OdontoBackend.Infrastructure.Repository.CatalogoRepository.GetCatalogoByCodUni(Catalogo request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Repository\CatalogoRepository.cs:line 45
+   at OdontoBackend.Aplicacion.Services.CatalogoService.GetCatalogoByCodUni(Task`1 request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Aplicacion\Services\CatalogoService.cs:line 33
+   at OdontoBackend.Services.Api.Controllers.CatalogoController.GetCatalogoByCodUni(CatalogoByCodUniQuery request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\Controllers\CatalogoController.cs:line 30
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at OdontoBackend.Common.Logs.ExceptionHandler.Invoke(HttpContext context) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\ExceptionHandler.cs:line 32
+Information: 00:37:50 - 14 - Now listening on: https://localhost:7003
+Information: 00:37:50 - 14 - Now listening on: http://localhost:5187
+Information: 00:37:50 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 00:37:50 - 0 - Hosting environment: Development
+Information: 00:37:50 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 00:38:33 - 14 - Now listening on: https://localhost:7003
+Information: 00:38:33 - 14 - Now listening on: http://localhost:5187
+Information: 00:38:33 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 00:38:33 - 0 - Hosting environment: Development
+Information: 00:38:33 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Error: 00:38:46 - 0 - System.InvalidCastException: Parameter aa must be set
+   at Npgsql.NpgsqlParameter.ValidateAndGetLength()
+   at Npgsql.NpgsqlParameterCollection.ProcessParameters(TypeMapper typeMapper, Boolean validateValues, CommandType commandType)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at OdontoBackend.Infrastructure.Context.ContextDatabase.ExecuteList[T](pkg pkg, NpgsqlCommand comando, String& err) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Context\ContextDatabase.cs:line 38
+   at OdontoBackend.Infrastructure.Repository.CatalogoRepository.GetCatalogoByCodUni(Catalogo request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Repository\CatalogoRepository.cs:line 45
+   at OdontoBackend.Aplicacion.Services.CatalogoService.GetCatalogoByCodUni(Task`1 request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Aplicacion\Services\CatalogoService.cs:line 33
+   at OdontoBackend.Services.Api.Controllers.CatalogoController.GetCatalogoByCodUni(CatalogoByCodUniQuery request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\Controllers\CatalogoController.cs:line 30
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at OdontoBackend.Common.Logs.ExceptionHandler.Invoke(HttpContext context) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\ExceptionHandler.cs:line 32
+Information: 00:39:35 - 14 - Now listening on: https://localhost:7003
+Information: 00:39:35 - 14 - Now listening on: http://localhost:5187
+Information: 00:39:35 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 00:39:36 - 0 - Hosting environment: Development
+Information: 00:39:36 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 00:41:17 - 14 - Now listening on: https://localhost:7003
+Information: 00:41:17 - 14 - Now listening on: http://localhost:5187
+Information: 00:41:17 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 00:41:17 - 0 - Hosting environment: Development
+Information: 00:41:17 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 00:41:40 - 14 - Now listening on: https://localhost:7003
+Information: 00:41:40 - 14 - Now listening on: http://localhost:5187
+Information: 00:41:40 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 00:41:40 - 0 - Hosting environment: Development
+Information: 00:41:40 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 00:47:30 - 14 - Now listening on: https://localhost:7003
+Information: 00:47:30 - 14 - Now listening on: http://localhost:5187
+Information: 00:47:30 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 00:47:30 - 0 - Hosting environment: Development
+Information: 00:47:30 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 00:47:40 - 14 - Now listening on: https://localhost:7003
+Information: 00:47:40 - 14 - Now listening on: http://localhost:5187
+Information: 00:47:40 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 00:47:40 - 0 - Hosting environment: Development
+Information: 00:47:40 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 00:48:04 - 14 - Now listening on: https://localhost:7003
+Information: 00:48:04 - 14 - Now listening on: http://localhost:5187
+Information: 00:48:04 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 00:48:04 - 0 - Hosting environment: Development
+Information: 00:48:04 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 02:28:22 - 14 - Now listening on: https://localhost:7003
+Information: 02:28:22 - 14 - Now listening on: http://localhost:5187
+Information: 02:28:22 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 02:28:22 - 0 - Hosting environment: Development
+Information: 02:28:22 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 09:25:06 - 14 - Now listening on: https://localhost:7003
+Information: 09:25:06 - 14 - Now listening on: http://localhost:5187
+Information: 09:25:06 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 09:25:06 - 0 - Hosting environment: Development
+Information: 09:25:06 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 09:30:57 - 14 - Now listening on: https://localhost:7003
+Information: 09:30:57 - 14 - Now listening on: http://localhost:5187
+Information: 09:30:57 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 09:30:57 - 0 - Hosting environment: Development
+Information: 09:30:57 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 09:34:02 - 14 - Now listening on: https://localhost:7003
+Information: 09:34:02 - 14 - Now listening on: http://localhost:5187
+Information: 09:34:02 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 09:34:02 - 0 - Hosting environment: Development
+Information: 09:34:02 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 09:38:13 - 14 - Now listening on: https://localhost:7003
+Information: 09:38:13 - 14 - Now listening on: http://localhost:5187
+Information: 09:38:13 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 09:38:13 - 0 - Hosting environment: Development
+Information: 09:38:13 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 09:42:12 - 14 - Now listening on: https://localhost:7003
+Information: 09:42:12 - 14 - Now listening on: http://localhost:5187
+Information: 09:42:12 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 09:42:12 - 0 - Hosting environment: Development
+Information: 09:42:12 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 09:45:01 - 14 - Now listening on: https://localhost:7003
+Information: 09:45:01 - 14 - Now listening on: http://localhost:5187
+Information: 09:45:01 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 09:45:01 - 0 - Hosting environment: Development
+Information: 09:45:01 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 09:46:25 - 14 - Now listening on: https://localhost:7003
+Information: 09:46:25 - 14 - Now listening on: http://localhost:5187
+Information: 09:46:25 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 09:46:25 - 0 - Hosting environment: Development
+Information: 09:46:25 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 09:47:10 - 14 - Now listening on: https://localhost:7003
+Information: 09:47:10 - 14 - Now listening on: http://localhost:5187
+Information: 09:47:10 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 09:47:10 - 0 - Hosting environment: Development
+Information: 09:47:10 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 09:50:03 - 14 - Now listening on: https://localhost:7003
+Information: 09:50:03 - 14 - Now listening on: http://localhost:5187
+Information: 09:50:03 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 09:50:03 - 0 - Hosting environment: Development
+Information: 09:50:03 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 09:54:06 - 14 - Now listening on: https://localhost:7003
+Information: 09:54:06 - 14 - Now listening on: http://localhost:5187
+Information: 09:54:06 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 09:54:06 - 0 - Hosting environment: Development
+Information: 09:54:06 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 09:59:27 - 14 - Now listening on: https://localhost:7003
+Information: 09:59:27 - 14 - Now listening on: http://localhost:5187
+Information: 09:59:27 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 09:59:27 - 0 - Hosting environment: Development
+Information: 09:59:27 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 09:59:57 - 14 - Now listening on: https://localhost:7003
+Information: 09:59:57 - 14 - Now listening on: http://localhost:5187
+Information: 09:59:57 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 09:59:57 - 0 - Hosting environment: Development
+Information: 09:59:57 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 10:01:53 - 14 - Now listening on: https://localhost:7003
+Information: 10:01:53 - 14 - Now listening on: http://localhost:5187
+Information: 10:01:53 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 10:01:53 - 0 - Hosting environment: Development
+Information: 10:01:53 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 10:02:44 - 14 - Now listening on: https://localhost:7003
+Information: 10:02:44 - 14 - Now listening on: http://localhost:5187
+Information: 10:02:44 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 10:02:44 - 0 - Hosting environment: Development
+Information: 10:02:44 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 10:03:40 - 14 - Now listening on: https://localhost:7003
+Information: 10:03:40 - 14 - Now listening on: http://localhost:5187
+Information: 10:03:40 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 10:03:40 - 0 - Hosting environment: Development
+Information: 10:03:40 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 10:05:10 - 14 - Now listening on: https://localhost:7003
+Information: 10:05:10 - 14 - Now listening on: http://localhost:5187
+Information: 10:05:10 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 10:05:10 - 0 - Hosting environment: Development
+Information: 10:05:10 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 10:08:09 - 14 - Now listening on: https://localhost:7003
+Information: 10:08:09 - 14 - Now listening on: http://localhost:5187
+Information: 10:08:09 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 10:08:09 - 0 - Hosting environment: Development
+Information: 10:08:09 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 10:11:21 - 14 - Now listening on: https://localhost:7003
+Information: 10:11:21 - 14 - Now listening on: http://localhost:5187
+Information: 10:11:21 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 10:11:21 - 0 - Hosting environment: Development
+Information: 10:11:21 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 10:12:00 - 14 - Now listening on: https://localhost:7003
+Information: 10:12:00 - 14 - Now listening on: http://localhost:5187
+Information: 10:12:00 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 10:12:00 - 0 - Hosting environment: Development
+Information: 10:12:00 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Error: 10:15:03 - 0 - Npgsql.PostgresException (0x80004005): 42809: g_catalogos.show_cities_multiple() no es un procedimiento
+
+POSITION: 6
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|234_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at OdontoBackend.Infrastructure.Repository.CatalogoRepository.GetCatalogoByCodUni(Catalogo request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Repository\CatalogoRepository.cs:line 93
+   at OdontoBackend.Aplicacion.Services.CatalogoService.GetCatalogoByCodUni(Task`1 request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Aplicacion\Services\CatalogoService.cs:line 33
+   at OdontoBackend.Services.Api.Controllers.CatalogoController.GetCatalogoByCodUni(CatalogoByCodUniQuery request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\Controllers\CatalogoController.cs:line 30
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at OdontoBackend.Common.Logs.ExceptionHandler.Invoke(HttpContext context) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\ExceptionHandler.cs:line 32
+  Exception data:
+    Severity: ERROR
+    SqlState: 42809
+    MessageText: g_catalogos.show_cities_multiple() no es un procedimiento
+    Hint: Para invocar a una función, use SELECT.
+    Position: 6
+    File: d:\pginstaller_13.auto\postgres.windows-x64\src\backend\parser\parse_func.c
+    Line: 289
+    Routine: ParseFuncOrColumn
+Error: 10:17:45 - 0 - System.InvalidOperationException: No row is available
+   at Npgsql.NpgsqlDataReader.GetValue(Int32 ordinal)
+   at Npgsql.NpgsqlDataReader.get_Item(Int32 ordinal)
+   at OdontoBackend.Infrastructure.Repository.CatalogoRepository.GetCatalogoByCodUni(Catalogo request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Repository\CatalogoRepository.cs:line 102
+   at OdontoBackend.Aplicacion.Services.CatalogoService.GetCatalogoByCodUni(Task`1 request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Aplicacion\Services\CatalogoService.cs:line 33
+   at OdontoBackend.Services.Api.Controllers.CatalogoController.GetCatalogoByCodUni(CatalogoByCodUniQuery request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\Controllers\CatalogoController.cs:line 30
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at OdontoBackend.Common.Logs.ExceptionHandler.Invoke(HttpContext context) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\ExceptionHandler.cs:line 32
+Information: 10:19:33 - 14 - Now listening on: https://localhost:7003
+Information: 10:19:33 - 14 - Now listening on: http://localhost:5187
+Information: 10:19:33 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 10:19:33 - 0 - Hosting environment: Development
+Information: 10:19:33 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 10:22:02 - 14 - Now listening on: https://localhost:7003
+Information: 10:22:02 - 14 - Now listening on: http://localhost:5187
+Information: 10:22:02 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 10:22:02 - 0 - Hosting environment: Development
+Information: 10:22:02 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 10:22:10 - 14 - Now listening on: https://localhost:7003
+Information: 10:22:11 - 14 - Now listening on: http://localhost:5187
+Information: 10:22:11 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 10:22:11 - 0 - Hosting environment: Development
+Information: 10:22:11 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 10:23:36 - 14 - Now listening on: https://localhost:7003
+Information: 10:23:36 - 14 - Now listening on: http://localhost:5187
+Information: 10:23:36 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 10:23:36 - 0 - Hosting environment: Development
+Information: 10:23:36 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 10:24:08 - 14 - Now listening on: https://localhost:7003
+Information: 10:24:08 - 14 - Now listening on: http://localhost:5187
+Information: 10:24:08 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 10:24:08 - 0 - Hosting environment: Development
+Information: 10:24:08 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 10:26:05 - 14 - Now listening on: https://localhost:7003
+Information: 10:26:05 - 14 - Now listening on: http://localhost:5187
+Information: 10:26:05 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 10:26:05 - 0 - Hosting environment: Development
+Information: 10:26:05 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Error: 10:31:46 - 0 - System.InvalidOperationException: No row is available
+   at Npgsql.NpgsqlDataReader.GetValue(Int32 ordinal)
+   at Npgsql.NpgsqlDataReader.get_Item(Int32 ordinal)
+   at OdontoBackend.Infrastructure.Repository.CatalogoRepository.GetCatalogoByCodUni(Catalogo request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Repository\CatalogoRepository.cs:line 116
+   at OdontoBackend.Aplicacion.Services.CatalogoService.GetCatalogoByCodUni(Task`1 request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Aplicacion\Services\CatalogoService.cs:line 33
+   at OdontoBackend.Services.Api.Controllers.CatalogoController.GetCatalogoByCodUni(CatalogoByCodUniQuery request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\Controllers\CatalogoController.cs:line 30
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at OdontoBackend.Common.Logs.ExceptionHandler.Invoke(HttpContext context) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\ExceptionHandler.cs:line 32
+Error: 10:36:23 - 0 - Npgsql.PostgresException (0x80004005): 42P01: no existe la relación «g_catalogos.show_cities_multiple»
+
+POSITION: 15
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|234_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at OdontoBackend.Infrastructure.Context.ContextDatabase.ExecuteList[T](pkg pkg, NpgsqlCommand comando, String& err) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Context\ContextDatabase.cs:line 38
+   at OdontoBackend.Infrastructure.Repository.CatalogoRepository.GetCatalogoByCodUni(Catalogo request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Repository\CatalogoRepository.cs:line 139
+   at OdontoBackend.Aplicacion.Services.CatalogoService.GetCatalogoByCodUni(Task`1 request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Aplicacion\Services\CatalogoService.cs:line 33
+   at OdontoBackend.Services.Api.Controllers.CatalogoController.GetCatalogoByCodUni(CatalogoByCodUniQuery request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\Controllers\CatalogoController.cs:line 30
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at OdontoBackend.Common.Logs.ExceptionHandler.Invoke(HttpContext context) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\ExceptionHandler.cs:line 32
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: no existe la relación «g_catalogos.show_cities_multiple»
+    Position: 15
+    File: d:\pginstaller_13.auto\postgres.windows-x64\src\backend\parser\parse_relation.c
+    Line: 1355
+    Routine: parserOpenTable
+Information: 10:39:44 - 14 - Now listening on: https://localhost:7003
+Information: 10:39:44 - 14 - Now listening on: http://localhost:5187
+Information: 10:39:44 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 10:39:44 - 0 - Hosting environment: Development
+Information: 10:39:44 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 10:42:00 - 14 - Now listening on: https://localhost:7003
+Information: 10:42:00 - 14 - Now listening on: http://localhost:5187
+Information: 10:42:00 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 10:42:00 - 0 - Hosting environment: Development
+Information: 10:42:00 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 10:45:23 - 14 - Now listening on: https://localhost:7003
+Information: 10:45:23 - 14 - Now listening on: http://localhost:5187
+Information: 10:45:23 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 10:45:23 - 0 - Hosting environment: Development
+Information: 10:45:23 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 10:45:34 - 14 - Now listening on: https://localhost:7003
+Information: 10:45:34 - 14 - Now listening on: http://localhost:5187
+Information: 10:45:34 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 10:45:34 - 0 - Hosting environment: Development
+Information: 10:45:34 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 10:47:46 - 14 - Now listening on: https://localhost:7003
+Information: 10:47:46 - 14 - Now listening on: http://localhost:5187
+Information: 10:47:46 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 10:47:46 - 0 - Hosting environment: Development
+Information: 10:47:46 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 10:48:57 - 14 - Now listening on: https://localhost:7003
+Information: 10:48:57 - 14 - Now listening on: http://localhost:5187
+Information: 10:48:57 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 10:48:57 - 0 - Hosting environment: Development
+Information: 10:48:57 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 10:51:38 - 14 - Now listening on: https://localhost:7003
+Information: 10:51:38 - 14 - Now listening on: http://localhost:5187
+Information: 10:51:38 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 10:51:38 - 0 - Hosting environment: Development
+Information: 10:51:38 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 10:54:56 - 14 - Now listening on: https://localhost:7003
+Information: 10:54:56 - 14 - Now listening on: http://localhost:5187
+Information: 10:54:56 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 10:54:56 - 0 - Hosting environment: Development
+Information: 10:54:56 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 10:56:44 - 14 - Now listening on: https://localhost:7003
+Information: 10:56:44 - 14 - Now listening on: http://localhost:5187
+Information: 10:56:44 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 10:56:44 - 0 - Hosting environment: Development
+Information: 10:56:44 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 11:00:07 - 14 - Now listening on: https://localhost:7003
+Information: 11:00:07 - 14 - Now listening on: http://localhost:5187
+Information: 11:00:07 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 11:00:07 - 0 - Hosting environment: Development
+Information: 11:00:07 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 11:01:09 - 14 - Now listening on: https://localhost:7003
+Information: 11:01:09 - 14 - Now listening on: http://localhost:5187
+Information: 11:01:09 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 11:01:09 - 0 - Hosting environment: Development
+Information: 11:01:09 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 11:01:49 - 14 - Now listening on: https://localhost:7003
+Information: 11:01:49 - 14 - Now listening on: http://localhost:5187
+Information: 11:01:49 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 11:01:49 - 0 - Hosting environment: Development
+Information: 11:01:49 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 11:02:38 - 14 - Now listening on: https://localhost:7003
+Information: 11:02:38 - 14 - Now listening on: http://localhost:5187
+Information: 11:02:38 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 11:02:38 - 0 - Hosting environment: Development
+Information: 11:02:38 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 11:03:27 - 14 - Now listening on: https://localhost:7003
+Information: 11:03:27 - 14 - Now listening on: http://localhost:5187
+Information: 11:03:27 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 11:03:27 - 0 - Hosting environment: Development
+Information: 11:03:27 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 11:04:00 - 14 - Now listening on: https://localhost:7003
+Information: 11:04:00 - 14 - Now listening on: http://localhost:5187
+Information: 11:04:00 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 11:04:00 - 0 - Hosting environment: Development
+Information: 11:04:00 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 11:05:46 - 14 - Now listening on: https://localhost:7003
+Information: 11:05:46 - 14 - Now listening on: http://localhost:5187
+Information: 11:05:46 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 11:05:46 - 0 - Hosting environment: Development
+Information: 11:05:46 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 11:09:12 - 14 - Now listening on: https://localhost:7003
+Information: 11:09:12 - 14 - Now listening on: http://localhost:5187
+Information: 11:09:12 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 11:09:12 - 0 - Hosting environment: Development
+Information: 11:09:12 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 11:09:42 - 14 - Now listening on: https://localhost:7003
+Information: 11:09:42 - 14 - Now listening on: http://localhost:5187
+Information: 11:09:42 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 11:09:42 - 0 - Hosting environment: Development
+Information: 11:09:42 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 11:10:36 - 14 - Now listening on: https://localhost:7003
+Information: 11:10:36 - 14 - Now listening on: http://localhost:5187
+Information: 11:10:36 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 11:10:36 - 0 - Hosting environment: Development
+Information: 11:10:36 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 11:12:43 - 14 - Now listening on: https://localhost:7003
+Information: 11:12:43 - 14 - Now listening on: http://localhost:5187
+Information: 11:12:43 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 11:12:43 - 0 - Hosting environment: Development
+Information: 11:12:43 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 11:20:35 - 14 - Now listening on: https://localhost:7003
+Information: 11:20:35 - 14 - Now listening on: http://localhost:5187
+Information: 11:20:35 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 11:20:35 - 0 - Hosting environment: Development
+Information: 11:20:35 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 11:30:12 - 14 - Now listening on: https://localhost:7003
+Information: 11:30:12 - 14 - Now listening on: http://localhost:5187
+Information: 11:30:12 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 11:30:12 - 0 - Hosting environment: Development
+Information: 11:30:12 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api

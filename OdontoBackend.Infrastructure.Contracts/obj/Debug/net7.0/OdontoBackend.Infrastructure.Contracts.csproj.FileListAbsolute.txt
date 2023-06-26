@@ -1,0 +1,12 @@
+C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure.Contracts\bin\Debug\net7.0\OdontoBackend.Infrastructure.Contracts.deps.json
+C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure.Contracts\bin\Debug\net7.0\OdontoBackend.Infrastructure.Contracts.dll
+C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure.Contracts\bin\Debug\net7.0\OdontoBackend.Infrastructure.Contracts.pdb
+C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure.Contracts\obj\Debug\net7.0\OdontoBackend.Infrastructure.Contracts.csproj.AssemblyReference.cache
+C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure.Contracts\obj\Debug\net7.0\OdontoBackend.Infrastructure.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure.Contracts\obj\Debug\net7.0\OdontoBackend.Infrastructure.Contracts.AssemblyInfoInputs.cache
+C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure.Contracts\obj\Debug\net7.0\OdontoBackend.Infrastructure.Contracts.AssemblyInfo.cs
+C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure.Contracts\obj\Debug\net7.0\OdontoBackend.Infrastructure.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure.Contracts\obj\Debug\net7.0\OdontoBackend.Infrastructure.Contracts.dll
+C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure.Contracts\obj\Debug\net7.0\refint\OdontoBackend.Infrastructure.Contracts.dll
+C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure.Contracts\obj\Debug\net7.0\OdontoBackend.Infrastructure.Contracts.pdb
+C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure.Contracts\obj\Debug\net7.0\ref\OdontoBackend.Infrastructure.Contracts.dll
