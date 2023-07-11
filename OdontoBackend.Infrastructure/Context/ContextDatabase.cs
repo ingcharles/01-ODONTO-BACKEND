@@ -37,28 +37,31 @@ namespace OdontoBackend.Infrastructure.Context
 
             // using (comando.Connection = GetConnection())
             //{
-            comando.CommandText = /*UtilsContextDatabase.ToDescriptionString(pkg) +*/ comando.CommandText;
+            //comando.CommandText = /*UtilsContextDatabase.ToDescriptionString(pkg) +*/ comando.CommandText;
                 NpgsqlDataReader reader = comando.ExecuteReader();
                 if (reader.HasRows)
                 {
                     var _dataTable = new DataTable();
                     _dataTable.Load(reader);
                     var result = UtilsContextDatabase.ConvertToList<T>(_dataTable).AsQueryable();
-                    //if (comando.Connection.State == ConnectionState.Open)
-                    //{
-                    //    CloseConnection(comando.Connection);
-                    //    comando.Dispose();
-                    //}
-                    return result;
+                //if (comando.Connection.State == ConnectionState.Open)
+                //{
+                //    CloseConnection(comando.Connection);
+                //    comando.Dispose();
+                //}
+                
+                return result;
                 }
                 else
                 {
-                    if (comando.Connection.State == ConnectionState.Open)
-                    {
-                        CloseConnection(comando.Connection);
-                        comando.Dispose();
-                    }
-                    return new List<T>().AsQueryable();
+                err = "a";
+                //if (comando.Connection.State == ConnectionState.Open)
+                //{
+                //    CloseConnection(comando.Connection);
+                //    comando.Dispose();
+                //    NpgsqlConnection.ClearPool(comando.Connection);
+                //}
+                return new List<T>().AsQueryable();
                 }
             //}
         }

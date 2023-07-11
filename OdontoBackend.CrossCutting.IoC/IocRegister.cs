@@ -33,28 +33,16 @@ namespace OdontoBackend.CrossCutting.IoC
             ////services.AddScoped<IValidator<CatalogoCommand>, CatalogoCommandValidator>();
             services.AddScoped<ICatalogoMapper, CatalogoMapper>();
             services.AddScoped<ICatalogoService, CatalogoService>();
-            //services.AddScoped<ICrcaMapper, CrcaMapper>();
-            //services.AddScoped<ICrcaService, CrcaService>();
-            //services.AddScoped<IIngresoMapper, IngresoMapper>();
-            //services.AddScoped<IIngresoService, IngresoService>();
-            //services.AddScoped<IGeneralMapper, GeneralMapper>();
-            //services.AddScoped<IGeneralService, GeneralService>();
-            //services.AddScoped<IPruebaMapper, PruebaMapper>();
-            //services.AddScoped<IPruebaService, PruebaService>();
-            //services.AddScoped<IActivoFijoMapper, ActivoFijoMapper>();
-            //services.AddScoped<IActivoFijoService, ActivoFijoService>();
+            services.AddScoped<IUserMapper, UserMapper>();
+            services.AddScoped<IUserService, UserService>();
             #endregion
 
             #region Domain-Infrastructure Layer
             services.AddScoped<IContextDatabase, ContextDatabase>();
+
             //services.AddScoped<ICiudadanoRepository, CiudadanoRepository>();
             services.AddScoped<ICatalogoRepository, CatalogoRepository>();
-            //services.AddScoped<IPersonaRepository, PersonaRepository>();
-            //services.AddScoped<ICrcaRepository, CrcaRepository>();
-            //services.AddScoped<IIngresoRepository, IngresoRepository>();
-            //services.AddScoped<IGeneralRepository, GeneralRepository>();
-            //services.AddScoped<IPruebaRepository, PruebaRepository>();
-            //services.AddScoped<IActivoFijoRepository, ActivoFijoRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
 
             #endregion
         }

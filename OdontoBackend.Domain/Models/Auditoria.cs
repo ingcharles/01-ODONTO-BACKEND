@@ -8,6 +8,6 @@ namespace OdontoBackend.Domain.Models
 {
     public class Auditoria
     {
-        public string AUDITORIA { get; set; } = default!;
+        public string auditoria { get; set; } = default!;
     }
 }

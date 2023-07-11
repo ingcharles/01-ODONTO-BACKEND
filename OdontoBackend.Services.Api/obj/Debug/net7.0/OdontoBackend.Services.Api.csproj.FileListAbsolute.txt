@@ -15,7 +15,6 @@ C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\obj\De
 C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\obj\Debug\net7.0\OdontoBackend.Services.Api.AssemblyInfoInputs.cache
 C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\obj\Debug\net7.0\OdontoBackend.Services.Api.AssemblyInfo.cs
 C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\obj\Debug\net7.0\OdontoBackend.Services.Api.csproj.CoreCompileInputs.cache
-C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\obj\Debug\net7.0\OdontoBackend.Services.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\obj\Debug\net7.0\OdontoBackend.Services.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\obj\Debug\net7.0\staticwebassets\msbuild.OdontoBackend.Services.Api.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\obj\Debug\net7.0\staticwebassets\msbuild.build.OdontoBackend.Services.Api.props

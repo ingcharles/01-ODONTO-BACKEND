@@ -13,6 +13,8 @@ namespace OdontoBackend.Infrastructure.Contracts.Entities
         {
             [Description("g_catalogos.")]
             g_catalogos,
+            [Description("esq_usuarios.")]
+            esq_usuarios,
             //[Description("PKG_APORTANTE.")]
             //PKG_APORTANTE,
             //[Description("PKG_PRUEBA_CA.")]
