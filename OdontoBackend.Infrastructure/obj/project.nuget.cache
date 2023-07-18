@@ -1,13 +1,28 @@
 {
   "version": 2,
-  "dgSpecHash": "VDHAlXtpSljfr/Mr960CrJ1V9gj0lwiJvLn8JS96HNsVoJZMG0mVAlOQxdcja5O7dt3Bzl2GQfuS+E2uuQ+qMw==",
+  "dgSpecHash": "vKPk3qbf+jkrB8vOxSkoTOUpaq5dvBpdft3CYxQXr1GAdlZ+KjPgTlm9Nmze8BnGE5zLJO14S2+Ell4rbimtpg==",
   "success": true,
   "projectFilePath": "C:\\Users\\CARLOS\\source\\repos\\01-ODONTO-BACKEND\\OdontoBackend.Infrastructure\\OdontoBackend.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\CARLOS\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\CARLOS\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\CARLOS\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
-    "C:\\Users\\CARLOS\\.nuget\\packages\\npgsql\\7.0.4\\npgsql.7.0.4.nupkg.sha512"
+    "C:\\Users\\CARLOS\\.nuget\\packages\\npgsql\\7.0.4\\npgsql.7.0.4.nupkg.sha512",
+    "C:\\Users\\CARLOS\\.nuget\\packages\\oracle.manageddataaccess\\21.10.0\\oracle.manageddataaccess.21.10.0.nupkg.sha512",
+    "C:\\Users\\CARLOS\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\CARLOS\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
+    "C:\\Users\\CARLOS\\.nuget\\packages\\system.text.json\\6.0.1\\system.text.json.6.0.1.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Oracle.ManagedDataAccess 21.10.0\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net7.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "Oracle.ManagedDataAccess",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }

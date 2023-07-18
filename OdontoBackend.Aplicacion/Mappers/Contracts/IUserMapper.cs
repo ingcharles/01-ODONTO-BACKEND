@@ -11,7 +11,7 @@ namespace OdontoBackend.Aplicacion.Mappers.Contracts
 {
     public interface IUserMapper
     {
-        public IQueryable<User> UserQueryToUserByCodPas(Task<UserByCodPasQuery> source);
-        public IQueryable<UserViewModel> UserQueryFromUserByCodPas(Task<User> source);
+        public IQueryable<User> UserQueryToUserByCiPas(Task<UserByCiPasQuery> source);
+        public IQueryable<UserViewModel> UserQueryFromUserByCiPas(Task<User> source);
     }
 }

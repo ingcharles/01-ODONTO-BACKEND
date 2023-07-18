@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace OdontoBackend.Aplication.Entities.Validators
 {
-    public class UserQueryValidator : AbstractValidator<UserByCodPasQuery>
+    public class UserQueryValidator : AbstractValidator<UserByCiPasQuery>
     {
         public UserQueryValidator()
         {

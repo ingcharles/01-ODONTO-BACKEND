@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dxiz1DYUzW9yKeDpqJdwo3vNazy/+ecGpKWCT86GTMupNXfGl9tOVnXeozewzPB8maKRuPilbJAUA6GU4uleJw==",
+  "dgSpecHash": "tCokxB/rDve5vkGEUwTlP+IQ/SQ8ihTYoKKNPjrlCGaXDIboacdF9yRMSVvsS8BlJ1ig9Zhsw3IQXh73WSoZFA==",
   "success": true,
   "projectFilePath": "C:\\Users\\CARLOS\\source\\repos\\01-ODONTO-BACKEND\\OdontoBackend.CrossCutting.IoC\\OdontoBackend.CrossCutting.IoC.csproj",
   "expectedPackageFiles": [
@@ -13,7 +13,21 @@
     "C:\\Users\\CARLOS\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\CARLOS\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\CARLOS\\.nuget\\packages\\npgsql\\7.0.4\\npgsql.7.0.4.nupkg.sha512",
-    "C:\\Users\\CARLOS\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512"
+    "C:\\Users\\CARLOS\\.nuget\\packages\\oracle.manageddataaccess\\21.10.0\\oracle.manageddataaccess.21.10.0.nupkg.sha512",
+    "C:\\Users\\CARLOS\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\CARLOS\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
+    "C:\\Users\\CARLOS\\.nuget\\packages\\system.text.json\\6.0.1\\system.text.json.6.0.1.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Oracle.ManagedDataAccess 21.10.0\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net7.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "Oracle.ManagedDataAccess",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }

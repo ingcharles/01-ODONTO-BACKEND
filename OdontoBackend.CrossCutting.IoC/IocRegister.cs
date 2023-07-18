@@ -42,7 +42,7 @@ namespace OdontoBackend.CrossCutting.IoC
 
             //services.AddScoped<ICiudadanoRepository, CiudadanoRepository>();
             services.AddScoped<ICatalogoRepository, CatalogoRepository>();
-            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IUserRepository, AuthRepository>();
 
             #endregion
         }

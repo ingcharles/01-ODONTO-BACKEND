@@ -11,7 +11,7 @@ namespace OdontoBackend.Aplicacion.Services.Contracts
 {
     public interface IUserService : IDisposable
     {
-        Task<IQueryable<UserViewModel>> GetUserByCodPas(Task<UserByCodPasQuery> request);
+        Task<IQueryable<UserViewModel>> getUserByCiPas(Task<UserByCiPasQuery> request);
         
     }
 }

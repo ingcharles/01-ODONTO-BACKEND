@@ -194,6 +194,10 @@
             "Npgsql": {
               "target": "Package",
               "version": "[7.0.4, )"
+            },
+            "Oracle.ManagedDataAccess": {
+              "target": "Package",
+              "version": "[21.10.0, )"
             }
           },
           "imports": [

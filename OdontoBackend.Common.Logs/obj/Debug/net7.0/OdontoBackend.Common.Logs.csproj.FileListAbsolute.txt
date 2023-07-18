@@ -10,3 +10,5 @@ C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\obj\Deb
 C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\obj\Debug\net7.0\refint\OdontoBackend.Common.Logs.dll
 C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\obj\Debug\net7.0\OdontoBackend.Common.Logs.pdb
 C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\obj\Debug\net7.0\ref\OdontoBackend.Common.Logs.dll
+C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\obj\Debug\net7.0\OdontoBackend.Common.Logs.Messages.resources
+C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\obj\Debug\net7.0\OdontoBackend.Common.Logs.csproj.GenerateResource.cache

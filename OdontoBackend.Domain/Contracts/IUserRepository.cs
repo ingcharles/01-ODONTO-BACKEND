@@ -9,7 +9,7 @@ namespace OdontoBackend.Domain.Contracts
 {
     public interface IUserRepository
     {
-        Task<IQueryable<User>> GetUserByCodPas(User request);
+        Task<IQueryable<User>> getUserByCiPas(User request);
    
     }
 }

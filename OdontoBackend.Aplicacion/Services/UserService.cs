@@ -27,11 +27,11 @@ namespace OdontoBackend.Aplicacion.Services
             GC.SuppressFinalize(this);
         }
 
-        public Task<IQueryable<UserViewModel>> GetUserByCodPas(Task<UserByCodPasQuery> request)
+        public Task<IQueryable<UserViewModel>> getUserByCiPas(Task<UserByCiPasQuery> request)
         {
-            var _request = _mapper.UserQueryToUserByCodPas(request);
-            var _response = _repository.GetUserByCodPas(_request.FirstOrDefault()!);
-            var _result = _response.Result?.Count() > 0 ? _mapper.UserQueryFromUserByCodPas(Task.FromResult(_response.Result.FirstOrDefault()!)) : default!;
+            var _request = _mapper.UserQueryToUserByCiPas(request);
+            var _response = _repository.getUserByCiPas(_request.FirstOrDefault()!);
+            var _result = _response.Result?.Count() > 0 ? _mapper.UserQueryFromUserByCiPas(Task.FromResult(_response.Result.FirstOrDefault()!)) : default!;
             return Task.FromResult(_result);
         }
        

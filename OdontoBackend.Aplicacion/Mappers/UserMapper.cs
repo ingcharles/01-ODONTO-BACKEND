@@ -12,19 +12,19 @@ namespace OdontoBackend.Aplicacion.Mappers
 {
     public class UserMapper : IUserMapper
     {
-        public IQueryable<User> UserQueryToUserByCodPas(Task<UserByCodPasQuery> source)
+        public IQueryable<User> UserQueryToUserByCiPas(Task<UserByCiPasQuery> source)
         {
             return new List<User>
             {
                 new User
                 {
                    // COD_UNI_User = source.Result.codigoUnico
-                    dni_usuario = source.Result.dni,
+                    dni_usuario = source.Result.ci,
                     pas_usuario = source.Result.password
                 }
             }.AsQueryable();
         }
-        public IQueryable<UserViewModel> UserQueryFromUserByCodPas(Task<User> source)
+        public IQueryable<UserViewModel> UserQueryFromUserByCiPas(Task<User> source)
         {
             return new List<UserViewModel>
             {

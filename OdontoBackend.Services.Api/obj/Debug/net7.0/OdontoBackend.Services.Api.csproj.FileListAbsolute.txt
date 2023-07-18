@@ -49,3 +49,4 @@ C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\bin\De
 C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\bin\Debug\net7.0\OdontoBackend.Infrastructure.Contracts.pdb
 C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\bin\Debug\net7.0\FluentValidation.dll
 C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.Annotations.dll
+C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\obj\Debug\net7.0\OdontoBackend.Services.Api.MvcApplicationPartsAssemblyInfo.cs

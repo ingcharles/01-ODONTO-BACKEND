@@ -5,6 +5,7 @@ using OdontoBackend.Domain.Models;
 using OdontoBackend.Infrastructure.Context;
 using OdontoBackend.Infrastructure.Contracts.Context;
 using OdontoBackend.Infrastructure.Contracts.Entities;
+using Oracle.ManagedDataAccess.Types;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -18,15 +19,15 @@ using static OdontoBackend.Infrastructure.Contracts.Entities.Packages;
 
 namespace OdontoBackend.Infrastructure.Repository
 {
-    public class UserRepository : IUserRepository
+    public class AuthRepository : IUserRepository
     {
         protected readonly IContextDatabase _context;
         protected String error = null!;
-        public UserRepository(IContextDatabase context)
+        public AuthRepository(IContextDatabase context)
         {
             _context = context;
         }
-        public Task<IQueryable<User>> GetUserByCodPas(User request)
+        public Task<IQueryable<User>> getUserByCiPas(User request)
         {
 
             using (var scope = new TransactionScope())
@@ -58,6 +59,18 @@ namespace OdontoBackend.Infrastructure.Repository
                         response = _context.ExecuteList<User>(cmd1, ref error);
                         scope.Complete();
                         return Task.FromResult(response.Count() > 0 ? response : default!);
+                   //     error = (OracleString)cmd.Parameters["O_ERROR"].Value != null ? (string)(OracleString)cmd.Parameters["O_ERROR"].Value
+                   //: "";
+                   //     if (error?.Length > 0)
+                   //     {
+                   //         request.mensaje_logica = error;
+                   //     }
+                   //     else
+                   //     {
+                   //         request.CLASE_CRCA.COD_CRCA = (OracleDecimal?)cmd.Parameters["O_COD_CRCA"].Value != null ? (Int64)(OracleDecimal?)cmd.Parameters["O_COD_CRCA"].Value : null;
+                   //     }
+                   //     //throw new Exception(error);
+                   //     result = response is true ? result.Append(request) : default!;
                     }
                     
                 }
