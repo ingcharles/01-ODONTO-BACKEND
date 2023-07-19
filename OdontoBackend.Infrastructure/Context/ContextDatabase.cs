@@ -54,7 +54,7 @@ namespace OdontoBackend.Infrastructure.Context
                 }
                 else
                 {
-                err = "a";
+                err = "Registro no encontrado";
                 //if (comando.Connection.State == ConnectionState.Open)
                 //{
                 //    CloseConnection(comando.Connection);

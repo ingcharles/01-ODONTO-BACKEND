@@ -20,7 +20,12 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseCors(c =>
+{
+    c.AllowAnyHeader();
+    c.AllowAnyMethod();
+    c.AllowAnyOrigin();
+});
 app.UseAuthorization();
 //Implementada para escribir los log en archivo
 app.UseMiddlewareLogs();

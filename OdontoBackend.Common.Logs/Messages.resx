@@ -118,31 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="201Created" xml:space="preserve">
-    <value>Registro creado exitosamente, Id={0}</value>
-    <comment>Message</comment>
+    <value>Registro creado exitosamente</value>
   </data>
-  <data name="Length" xml:space="preserve">
-    <value>Longitud de cadena entre {0} y {1}</value>
-    <comment>Validators</comment>
-  </data>
-  <data name="LengthCI" xml:space="preserve">
-    <value>La cédula consta de 10 dígitos</value>
-    <comment>Validators</comment>
-  </data>
-  <data name="NotEmpty" xml:space="preserve">
-    <value>El campo es obligatorio</value>
-    <comment>Validators</comment>
-  </data>
-  <data name="NotNull" xml:space="preserve">
-    <value>El campo no puede ser null</value>
-    <comment>Validators</comment>
-  </data>
-  <data name="Numbers" xml:space="preserve">
-    <value>Solo se permiten valores numéricos</value>
-    <comment>Validators</comment>
-  </data>
-  <data name="SpecialChar" xml:space="preserve">
-    <value>No se permiten el ingreso de los siguientes caracteres especiales: '&lt;' '&gt;'</value>
-    <comment>Validators</comment>
+  <data name="201Find" xml:space="preserve">
+    <value>Registro encontrado</value>
   </data>
 </root>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Cne.SCFRBackend.Common.Logs {
+namespace OdontoBackend.Common.Logs {
     using System;
     
     
@@ -36,10 +36,10 @@ namespace Cne.SCFRBackend.Common.Logs {
         ///   Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static global::System.Resources.ResourceManager ResourceManager {
+        internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Cne.SCFRBackend.Common.Logs.Messages", typeof(Messages).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("OdontoBackend.Common.Logs.Messages", typeof(Messages).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -51,7 +51,7 @@ namespace Cne.SCFRBackend.Common.Logs {
         ///   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static global::System.Globalization.CultureInfo Culture {
+        internal static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -59,67 +59,22 @@ namespace Cne.SCFRBackend.Common.Logs {
                 resourceCulture = value;
             }
         }
-        
+
         /// <summary>
-        ///   Busca una cadena traducida similar a Registro creado exitosamente, Id={0}.
+        ///   Busca una cadena traducida similar a Registro creado exitosamente.
         /// </summary>
         public static string _201Created {
             get {
                 return ResourceManager.GetString("201Created", resourceCulture);
             }
         }
-        
+
         /// <summary>
-        ///   Busca una cadena traducida similar a Longitud de cadena entre {0} y {1}.
+        ///   Busca una cadena traducida similar a Registro encontrado.
         /// </summary>
-        public static string Length {
+        public static string _201Find {
             get {
-                return ResourceManager.GetString("Length", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a La cédula consta de 10 dígitos.
-        /// </summary>
-        public static string LengthCI {
-            get {
-                return ResourceManager.GetString("LengthCI", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a El campo es obligatorio.
-        /// </summary>
-        public static string NotEmpty {
-            get {
-                return ResourceManager.GetString("NotEmpty", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a El campo no puede ser null.
-        /// </summary>
-        public static string NotNull {
-            get {
-                return ResourceManager.GetString("NotNull", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a Solo se permiten valores numéricos.
-        /// </summary>
-        public static string Numbers {
-            get {
-                return ResourceManager.GetString("Numbers", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a No se permiten el ingreso de los siguientes caracteres especiales: &apos;&lt;&apos; &apos;&gt;&apos;.
-        /// </summary>
-        public static string SpecialChar {
-            get {
-                return ResourceManager.GetString("SpecialChar", resourceCulture);
+                return ResourceManager.GetString("201Find", resourceCulture);
             }
         }
     }

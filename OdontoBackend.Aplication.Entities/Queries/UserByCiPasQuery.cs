@@ -9,6 +9,7 @@ namespace OdontoBackend.Aplication.Entities.Queries
 {
     public class UserByCiPasQuery
     {
+        public string auditoria { get; set; } = default!;
         [DisplayName("Cédula Usuario")]
         public string ci { get; set; } = default!;
         [DisplayName("Nombre Usuario")]

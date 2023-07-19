@@ -1,4 +1,4 @@
-﻿using Cne.SCFRBackend.Common.Logs;
+﻿using OdontoBackend.Common.Logs;
 using Microsoft.AspNetCore.Mvc;
 using OdontoBackend.Aplicacion.Services.Contracts;
 using OdontoBackend.Aplication.Entities.Queries;
@@ -22,18 +22,18 @@ namespace OdontoBackend.Services.Api.Controllers
         }
 
         [HttpPost]
-        [Route("getUserByCiPas")]
+        [Route("GetUserByCiPas")]
         [Produces("Application/Json", Type = typeof(object))]//UserViewModel
         [SwaggerOperation(Summary = "Obtener información del login de un usuario")]
         public IActionResult getUserByCiPas([FromBody] UserByCiPasQuery request)
         {
             if (!ModelState.IsValid) return StatusCode(StatusCodes.Status400BadRequest, ModelState);
-            var response = _serviceUser.getUserByCiPas(Task.FromResult(request));
+            var response = _serviceUser.GetUserByCiPas(Task.FromResult(request));
             //return Ok(response.Result?.FirstOrDefault() ?? default!);
             if (response.Result.Count(x => x.mensajeLogica == null) > 0)
             {
 
-                return Ok(new { data = response.Result.FirstOrDefault(), message = Messages._201Created, statusCode = StatusCodes.Status200OK, ok = true });
+                return Ok(new { data = response.Result.FirstOrDefault(), message = Messages._201Find, statusCode = StatusCodes.Status200OK, ok = true });
             }
             else
             {

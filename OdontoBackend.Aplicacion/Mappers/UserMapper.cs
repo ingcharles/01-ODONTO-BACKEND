@@ -30,7 +30,8 @@ namespace OdontoBackend.Aplicacion.Mappers
             {
                 new UserViewModel
                 {
-                    codigo = source.Result.cod_usuario
+                    codigoUsuario = source.Result.cod_usuario,
+                    mensajeLogica = source.Result.mensaje_logica
 
 
                 }

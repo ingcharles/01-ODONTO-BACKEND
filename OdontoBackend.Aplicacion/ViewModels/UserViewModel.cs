@@ -10,7 +10,7 @@ namespace OdontoBackend.Aplicacion.ViewModels
     public class UserViewModel
     {
         [DisplayName("Código usuario")]
-        public Int64? codigo { get; set; } = default!;
+        public Int64? codigoUsuario { get; set; } = default!;
 
         public string? mensajeLogica { get; set; } = default!;
     }
