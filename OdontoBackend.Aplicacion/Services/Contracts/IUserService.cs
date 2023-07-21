@@ -1,4 +1,5 @@
 ﻿using OdontoBackend.Aplicacion.ViewModels;
+using OdontoBackend.Aplication.Entities.Commands;
 using OdontoBackend.Aplication.Entities.Queries;
 using OdontoBackend.Domain.Models;
 using System;
@@ -12,6 +13,7 @@ namespace OdontoBackend.Aplicacion.Services.Contracts
     public interface IUserService : IDisposable
     {
         Task<IQueryable<UserViewModel>> GetUserByCiPas(Task<UserByCiPasQuery> request);
-        
+
+        Task<IQueryable<UserViewModel>> SaveRegisterUser(Task<UserCommand> request);
     }
 }

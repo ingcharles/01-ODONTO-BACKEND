@@ -1,0 +1,130 @@
+Information: 23:19:28 - 14 - Now listening on: https://localhost:7288
+Information: 23:19:28 - 14 - Now listening on: http://localhost:5187
+Information: 23:19:28 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 23:19:28 - 0 - Hosting environment: Development
+Information: 23:19:28 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 23:22:23 - 14 - Now listening on: https://localhost:7288
+Information: 23:22:23 - 14 - Now listening on: http://localhost:5187
+Information: 23:22:23 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 23:22:23 - 0 - Hosting environment: Development
+Information: 23:22:24 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 23:23:29 - 14 - Now listening on: https://localhost:7288
+Information: 23:23:29 - 14 - Now listening on: http://localhost:5187
+Information: 23:23:29 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 23:23:29 - 0 - Hosting environment: Development
+Information: 23:23:29 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 23:24:36 - 14 - Now listening on: https://localhost:7288
+Information: 23:24:36 - 14 - Now listening on: http://localhost:5187
+Information: 23:24:36 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 23:24:36 - 0 - Hosting environment: Development
+Information: 23:24:36 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 23:26:37 - 14 - Now listening on: https://localhost:7288
+Information: 23:26:37 - 14 - Now listening on: http://localhost:5187
+Information: 23:26:37 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 23:26:37 - 0 - Hosting environment: Development
+Information: 23:26:37 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 23:27:07 - 14 - Now listening on: https://localhost:7288
+Information: 23:27:07 - 14 - Now listening on: http://localhost:5187
+Information: 23:27:08 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 23:27:08 - 0 - Hosting environment: Development
+Information: 23:27:08 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Error: 23:27:31 - 0 - Npgsql.PostgresException (0x80004005): 2D000: terminación de transacción no válida
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|234_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at OdontoBackend.Infrastructure.Repository.AuthRepository.SaveRegisterUser(User request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Repository\AuthRepository.cs:line 113
+   at OdontoBackend.Aplicacion.Services.UserService.SaveRegisterUser(Task`1 request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Aplicacion\Services\UserService.cs:line 41
+   at OdontoBackend.Services.Api.Controllers.AuthController.SaveRegisterUser(UserCommand request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\Controllers\AuthController.cs:line 50
+   at lambda_method3(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at OdontoBackend.Common.Logs.ExceptionHandler.Invoke(HttpContext context) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\ExceptionHandler.cs:line 32
+  Exception data:
+    Severity: ERROR
+    SqlState: 2D000
+    MessageText: terminación de transacción no válida
+    Where: función PL/pgSQL esq_usuarios.save_register_user(character varying,character varying,character varying,character varying,character varying,boolean,boolean,boolean,integer,character varying) en la línea 15 en ROLLBACK
+    File: d:\pginstaller_13.auto\postgres.windows-x64\src\backend\executor\spi.c
+    Line: 293
+    Routine: _SPI_rollback
+Information: 23:28:18 - 14 - Now listening on: https://localhost:7288
+Information: 23:28:18 - 14 - Now listening on: http://localhost:5187
+Information: 23:28:18 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 23:28:18 - 0 - Hosting environment: Development
+Information: 23:28:18 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 23:31:51 - 14 - Now listening on: https://localhost:7288
+Information: 23:31:51 - 14 - Now listening on: http://localhost:5187
+Information: 23:31:51 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 23:31:51 - 0 - Hosting environment: Development
+Information: 23:31:51 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 23:33:02 - 14 - Now listening on: https://localhost:7288
+Information: 23:33:02 - 14 - Now listening on: http://localhost:5187
+Information: 23:33:02 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 23:33:02 - 0 - Hosting environment: Development
+Information: 23:33:02 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 23:34:16 - 14 - Now listening on: https://localhost:7288
+Information: 23:34:16 - 14 - Now listening on: http://localhost:5187
+Information: 23:34:16 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 23:34:16 - 0 - Hosting environment: Development
+Information: 23:34:16 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 23:34:55 - 14 - Now listening on: https://localhost:7288
+Information: 23:34:55 - 14 - Now listening on: http://localhost:5187
+Information: 23:34:55 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 23:34:55 - 0 - Hosting environment: Development
+Information: 23:34:55 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 23:38:34 - 14 - Now listening on: https://localhost:7288
+Information: 23:38:34 - 14 - Now listening on: http://localhost:5187
+Information: 23:38:34 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 23:38:34 - 0 - Hosting environment: Development
+Information: 23:38:34 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Error: 23:39:39 - 0 - System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at System.Linq.Queryable.Count[TSource](IQueryable`1 source, Expression`1 predicate)
+   at OdontoBackend.Services.Api.Controllers.AuthController.SaveRegisterUser(UserCommand request) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\Controllers\AuthController.cs:line 51
+   at lambda_method3(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at OdontoBackend.Common.Logs.ExceptionHandler.Invoke(HttpContext context) in C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\ExceptionHandler.cs:line 32
+Information: 23:44:01 - 14 - Now listening on: https://localhost:7288
+Information: 23:44:01 - 14 - Now listening on: http://localhost:5187
+Information: 23:44:01 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 23:44:01 - 0 - Hosting environment: Development
+Information: 23:44:01 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 23:46:06 - 14 - Now listening on: https://localhost:7288
+Information: 23:46:06 - 14 - Now listening on: http://localhost:5187
+Information: 23:46:06 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 23:46:06 - 0 - Hosting environment: Development
+Information: 23:46:06 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 23:46:19 - 14 - Now listening on: https://localhost:7288
+Information: 23:46:19 - 14 - Now listening on: http://localhost:5187
+Information: 23:46:19 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 23:46:19 - 0 - Hosting environment: Development
+Information: 23:46:19 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api

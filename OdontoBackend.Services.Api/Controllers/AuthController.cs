@@ -4,6 +4,7 @@ using OdontoBackend.Aplicacion.Services.Contracts;
 using OdontoBackend.Aplication.Entities.Queries;
 using OdontoBackend.Aplication.Entities.Validators;
 using Swashbuckle.AspNetCore.Annotations;
+using OdontoBackend.Aplication.Entities.Commands;
 
 namespace OdontoBackend.Services.Api.Controllers
 {
@@ -29,11 +30,27 @@ namespace OdontoBackend.Services.Api.Controllers
         {
             if (!ModelState.IsValid) return StatusCode(StatusCodes.Status400BadRequest, ModelState);
             var response = _serviceUser.GetUserByCiPas(Task.FromResult(request));
-            //return Ok(response.Result?.FirstOrDefault() ?? default!);
             if (response.Result.Count(x => x.mensajeLogica == null) > 0)
             {
-
                 return Ok(new { data = response.Result.FirstOrDefault(), message = Messages._201Find, statusCode = StatusCodes.Status200OK, ok = true });
+            }
+            else
+            {
+                return Ok(new { message = response.Result.FirstOrDefault()?.mensajeLogica, statusCode = StatusCodes.Status404NotFound, ok = false });
+            }
+        }
+
+        [HttpPost]
+        [Route("SaveRegisterUser")]
+        [Produces("Application/Json", Type = typeof(object))]//UserViewModel
+        [SwaggerOperation(Summary = "Obtener información del login de un usuario")]
+        public IActionResult SaveRegisterUser([FromBody] UserCommand request)
+        {
+            if (!ModelState.IsValid) return StatusCode(StatusCodes.Status400BadRequest, ModelState);
+            var response = _serviceUser.SaveRegisterUser(Task.FromResult(request));
+            if (response.Result.Count(x => x.mensajeLogica == null) > 0)
+            {
+                return Ok(new { data = response.Result.FirstOrDefault(), message = Messages._201Created, statusCode = StatusCodes.Status200OK, ok = true });
             }
             else
             {

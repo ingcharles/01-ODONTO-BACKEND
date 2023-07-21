@@ -5,6 +5,7 @@ using OdontoBackend.Domain.Models;
 using OdontoBackend.Infrastructure.Context;
 using OdontoBackend.Infrastructure.Contracts.Context;
 using OdontoBackend.Infrastructure.Contracts.Entities;
+using Oracle.ManagedDataAccess.Client;
 using Oracle.ManagedDataAccess.Types;
 using System;
 using System.Collections.Generic;
@@ -43,11 +44,6 @@ namespace OdontoBackend.Infrastructure.Repository
                         cmd.Parameters.Add("i_pas_usuario", NpgsqlDbType.Varchar).Value = request.pas_usuario;
                         cmd.Parameters.Add(new NpgsqlParameter("o_cursor", NpgsqlDbType.Refcursor) { Direction = ParameterDirection.InputOutput, Value = "o_cursor_one" });
                         cmd.ExecuteNonQuery();
-
-
-
-
-
                     }
                     var response = Enumerable.Empty<User>().AsQueryable();
                     using (NpgsqlCommand cmd1 = connection.CreateCommand())
@@ -57,7 +53,7 @@ namespace OdontoBackend.Infrastructure.Repository
                         cmd1.CommandType = CommandType.Text;
 
 
-                         response = _context.ExecuteList<User>(cmd1, ref error);
+                        response = _context.ExecuteList<User>(cmd1, ref error);
                         scope.Complete();
                         //_context.CloseConnection(connection);
                         //error = (OracleString)cmd.Parameters["O_ERROR"].Value != null ? (string)(OracleString)cmd.Parameters["O_ERROR"].Value
@@ -89,132 +85,131 @@ namespace OdontoBackend.Infrastructure.Repository
                 }
 
             }
-            //public Task<IQueryable<User>> getUserByCiPas(User request)
-            //{
 
-            //    using (var scope = new TransactionScope())
-            //    {
-            //        using (var connection = _context.GetConnection())
-            //        {
-            //            using (NpgsqlCommand cmd = connection.CreateCommand())
-            //            {
-            //                cmd.CommandText = UtilsContextDatabase.ToDescriptionString(Packages.pkg.esq_usuarios) + "get_user_by_cod_pas";
-            //                cmd.CommandType = CommandType.StoredProcedure;
-            //                cmd.Parameters.Add("i_dni_usuario", NpgsqlDbType.Varchar).Value = request.dni_usuario;
-            //                cmd.Parameters.Add("i_pas_usuario", NpgsqlDbType.Varchar).Value = request.pas_usuario;
-            //                cmd.Parameters.Add(new NpgsqlParameter("o_cursor", NpgsqlDbType.Refcursor) { Direction = ParameterDirection.InputOutput, Value = "o_cursor_one" });
-            //                cmd.ExecuteNonQuery();
+        }
+        public Task<IQueryable<UserCommandFrom>> SaveRegisterUser(User request)
+        {
 
+            using (var scope = new TransactionScope())
+            {
+                using (var connection = _context.GetConnection())
+                {
+                   
+                    var result = Enumerable.Empty<UserCommandFrom>().AsQueryable();
+                    UserCommandFrom resultResponse = new UserCommandFrom();
+                    using (NpgsqlCommand cmd = connection.CreateCommand())
+                    {
+                        cmd.CommandText = UtilsContextDatabase.ToDescriptionString(Packages.pkg.esq_usuarios) + "save_register_user";
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.Add("i_dni_usuario", NpgsqlDbType.Varchar).Value = request.dni_usuario;
+                        cmd.Parameters.Add("i_pas_usuario", NpgsqlDbType.Varchar).Value = request.pas_usuario;
+                        cmd.Parameters.Add("i_mai_usuario", NpgsqlDbType.Varchar).Value = request.mai_usuario;
+                        cmd.Parameters.Add("i_nom_usuario", NpgsqlDbType.Varchar).Value = request.nom_usuario;
+                        cmd.Parameters.Add("i_ape_usuario", NpgsqlDbType.Varchar).Value = request.ape_usuario;
+                        cmd.Parameters.Add("i_lic_agr_usuario", NpgsqlDbType.Boolean).Value = request.lic_agr_usuario;
+                        cmd.Parameters.Add("i_is_pro_usuario", NpgsqlDbType.Boolean).Value = request.is_pro_usuario;
+                        cmd.Parameters.Add("i_is_cli_usuario", NpgsqlDbType.Boolean).Value = request.is_cli_usuario;
+                        //cmd.Parameters.Add("cur_splogin", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
+                        cmd.Parameters.Add(new NpgsqlParameter("o_cod_usuario", NpgsqlDbType.Bigint) { Direction = ParameterDirection.InputOutput, Value = 0 });
+                        cmd.Parameters.Add(new NpgsqlParameter("o_error", NpgsqlDbType.Varchar) { Direction = ParameterDirection.InputOutput, Value = "" });
+                        int response = cmd.ExecuteNonQuery();
+                        //error = (OracleString)cmd.Parameters["o_error"].Value! != null ? (string)(OracleString)cmd.Parameters["o_error"].Value! : "";
+                        //codigoUsuario = (OracleDecimal?)cmd.Parameters["O_COD_CRCA"].Value != null ? (Int64)(OracleDecimal?)cmd.Parameters["O_COD_CRCA"].Value : null;
+                        // var response = _context.ExecuteNoQuery(Packages.pkg.PKG_CRCA, cmd, ref error);
+                        //_context.CloseConnection(connection);
+                        scope.Complete();
+                        connection.Close();
+                        error = (string)cmd.Parameters["o_error"].Value!;
+                   //: "";
+                        if (error?.Length > 0)
+                        {
+                            resultResponse.mensaje_logica = error;
+                        }
+                        else
+                        {
+                            resultResponse.cod_usuario = (Int64)cmd.Parameters["o_cod_usuario"].Value!;
+                            //request.CLASE_CRCA.NUM_CRCA = (OracleString?)cmd.Parameters["O_NUM_CRCA"].Value != null ? (string)(OracleString?)cmd.Parameters["O_NUM_CRCA"].Value : null;
+                        }
+                        //throw new Exception(error);
+                        result = response == -1 ? result.Append(resultResponse) : default!;
+                        //error = (OracleString)cmd.Parameters["O_ERROR"].Value != null ? (string)(OracleString)cmd.Parameters["O_ERROR"].Value
+                        //    : "";
+                        //if (error?.Length > 0)
+                        //{
+                        //    request.MENSAJE_LOGICA = error;
+                        //}
+                        ////throw new Exception(error);
+                        //result = response is true ? result.Append(request) : default!;
+                        //var response = Enumerable.Empty<UserCommandFrom>().AsQueryable();
 
+                        //response = _context.ExecuteList<UserCommandFrom>(cmd1, ref error);
+                        //scope.Complete();
 
+                        //if (error?.Length > 0)
+                        //    tasks.mensaje_logica = error;
+                        //else
+                        //    tasks.cod_usuario = codigoUsuario;
 
-
-            //            }
-            //            var response = Enumerable.Empty<User>().AsQueryable();
-            //            using (NpgsqlCommand cmd1 = connection.CreateCommand())
-            //            {
-            //                //cmd.CommandText = "fetch all in \"<unnamed portal 1>\"";
-            //                cmd1.CommandText = "fetch all in \"o_cursor_one\"";
-            //                cmd1.CommandType = CommandType.Text;
-
-
-            //                response = _context.ExecuteList<User>(cmd1, ref error);
-            //                scope.Complete();
-            //                return Task.FromResult(response.Count() > 0 ? response : default!);
-            //           //     error = (OracleString)cmd.Parameters["O_ERROR"].Value != null ? (string)(OracleString)cmd.Parameters["O_ERROR"].Value
-            //           //: "";
-            //           //     if (error?.Length > 0)
-            //           //     {
-            //           //         request.mensaje_logica = error;
-            //           //     }
-            //           //     else
-            //           //     {
-            //           //         request.CLASE_CRCA.COD_CRCA = (OracleDecimal?)cmd.Parameters["O_COD_CRCA"].Value != null ? (Int64)(OracleDecimal?)cmd.Parameters["O_COD_CRCA"].Value : null;
-            //           //     }
-            //           //     //throw new Exception(error);
-            //           //     result = response is true ? result.Append(request) : default!;
-            //            }
-
-            //        }
-
-            //    }
-
-            //using (var connection = _context.GetConnection())
-            //{
-
-            //    Debug.WriteLine(connection);
-            //    NpgsqlTransaction tran = connection.BeginTransaction();
-
-
-            //        var response = Enumerable.Empty<User>().AsQueryable();
-            //        //connection.Close();
-            //        using (NpgsqlCommand cmd = connection.CreateCommand())
-            //        {
-            //            //cmd.BindByName = true;
-            //            cmd.CommandText = UtilsContextDatabase.ToDescriptionString(Packages.pkg.esq_usuarios) + "get_user_by_cod_pas";
-            //            cmd.CommandType = CommandType.StoredProcedure;
-            //            cmd.Parameters.Add("i_dni_usuario", NpgsqlDbType.Varchar).Value = request.dni_usuario;
-            //            cmd.Parameters.Add("i_pas_usuario", NpgsqlDbType.Varchar).Value = request.pas_usuario;
-            //            //cmd.Parameters.Add(new NpgsqlParameter("_itemID", NpgsqlDbType.Integer)).Value = 1;//request.COD_UNI_User;
-            //            //{ Direction = ParameterDirection.Output });
-            //            //cmd.Parameters.Add(new NpgsqlParameter("_result_one", NpgsqlDbType.Refcursor) { Direction = ParameterDirection.InputOutput });
-            //            //cmd.Parameters.Add(new NpgsqlParameter("aa", NpgsqlDbType.Refcursor)).Direction = ParameterDirection.InputOutput;
-            //            //cmd.Parameters.Add(new NpgsqlParameter("f1", NpgsqlDbType.Numeric) { Direction = ParameterDirection.Output });
-            //            //cmd.Parameters.Add(new NpgsqlParameter("f2", NpgsqlDbType.Varchar, 500) { Direction = ParameterDirection.Output });
-            //            //cmd.Parameters.Add("O_CURSOR", DbType.RefCursor).Direction = ParameterDirection.Output;
-            //            //cmd.Parameters.Add("aa", NpgsqlDbType.Refcursor).Direction = ParameterDirection.Output;
-            //            //NpgsqlParameter p = new NpgsqlParameter();
-            //            //p.ParameterName = "aa";
-            //            //p.NpgsqlDbType = NpgsqlTypes.NpgsqlDbType.Refcursor;
-            //            //p.Direction = ParameterDirection.InputOutput;
-            //            //p.Value = "aa";
-            //            //cmd.Parameters.Add(p);
-            //            cmd.Parameters.Add(new NpgsqlParameter("o_cursor", NpgsqlDbType.Refcursor) { Direction = ParameterDirection.InputOutput, Value = "o_cursor_one" });
-            //            ///cmd.Parameters.AddWithValue("aa", NpgsqlDbType.Refcursor).Direction = ParameterDirection.Output;
-            //            cmd.ExecuteNonQuery();
-
-            //            //cmd.CommandText = "fetch all in \"<unnamed portal 1>\"";
-            //            cmd.CommandText = "fetch all in \"o_cursor_one\"";
-            //            cmd.CommandType = CommandType.Text;
-            //        cmd.Transaction = tran;
-            //        tran.Commit();
-            //        //cmd.ExecuteNonQuery();
-            //        response = _context.ExecuteList<User>(cmd, ref error);
-
-            //        //    //_context.CloseConnection(connection);
-            //        //    //error = "";// cmd.Parameters["O_ERROR"].Value != null ? (string)cmd.Parameters["O_ERROR"].Value! : error = "";
-
-            //        //    if (error?.Length > 0)
-            //        //    {
-            //        //        //tran.Rollback(); throw new Exception(error);
-            //        //    }
-            //        //    else
-            //        //    {
-            //        //       // tran.Commit();
-            //        //    };
-
-            //        }
-            //    //tran.Commit();
-            //    return default;// Task.FromResult(response.Count() > 0 ? response : default!);
-            //        //your codes having errors
-
-
-
-
-
-            //    //connection.Dispose();
-
-
-            //    //connection.Close();
-            //    _context.CloseConnection(connection);
-
-            //    //connection.Close();
-
-
-            //}
+                        //response = response == null ? response!.Append(tasks) : default!;
+                    }
+                    
+                    return Task.FromResult(result);
+                }
+            }
         }
 
 
+        //public Task<IQueryable<UserCommandFrom>> SaveRegisterUser(User request)
+        //{
+
+        //    using (var scope = new TransactionScope())
+        //    {
+        //        using (var connection = _context.GetConnection())
+        //        {
+        //            UserCommandFrom tasks = new UserCommandFrom();
+        //            Int64? codigoUsuario = null;
+        //            using (NpgsqlCommand cmd = connection.CreateCommand())
+        //            {
+        //                cmd.CommandText = UtilsContextDatabase.ToDescriptionString(Packages.pkg.esq_usuarios) + "save_register_user";
+        //                cmd.CommandType = CommandType.StoredProcedure;
+        //                cmd.Parameters.Add("i_dni_usuario", NpgsqlDbType.Varchar).Value = request.dni_usuario;
+        //                cmd.Parameters.Add("i_pas_usuario", NpgsqlDbType.Varchar).Value = request.pas_usuario;
+        //                cmd.Parameters.Add("i_nom_usuario", NpgsqlDbType.Varchar).Value = request.nom_usuario;
+        //                cmd.Parameters.Add("i_ape_usuario", NpgsqlDbType.Varchar).Value = request.ape_usuario;
+        //                cmd.Parameters.Add("i_lic_agr_usuario", NpgsqlDbType.Boolean).Value = request.lic_agr_usuario;
+        //                cmd.Parameters.Add("i_is_pro_usuario", NpgsqlDbType.Boolean).Value = request.is_pro_usuario;
+        //                cmd.Parameters.Add("i_is_cli_usuario", NpgsqlDbType.Boolean).Value = request.is_cli_usuario;
+        //                cmd.Parameters.Add(new NpgsqlParameter("o_cursor", NpgsqlDbType.Refcursor) { Direction = ParameterDirection.InputOutput, Value = "o_cursor_one" });
+        //                cmd.Parameters.Add(new NpgsqlParameter("o_error", NpgsqlDbType.Varchar) { Direction = ParameterDirection.Output });
+        //                cmd.ExecuteNonQuery();
+        //                error = (OracleString)cmd.Parameters["o_error"].Value! != null ? (string)(OracleString)cmd.Parameters["o_error"].Value! : "";
+        //                codigoUsuario = (OracleDecimal?)cmd.Parameters["O_COD_CRCA"].Value != null ? (Int64)(OracleDecimal?)cmd.Parameters["O_COD_CRCA"].Value : null;
+
+        //            }
+        //            var response = Enumerable.Empty<UserCommandFrom>().AsQueryable();
+
+        //            using (NpgsqlCommand cmd1 = connection.CreateCommand())
+        //            {
+
+        //                cmd1.CommandText = "fetch all in \"o_cursor_one\"";
+        //                cmd1.CommandType = CommandType.Text;
+
+
+        //                response = _context.ExecuteList<UserCommandFrom>(cmd1, ref error);
+        //                scope.Complete();
+
+        //                if (error?.Length > 0)
+        //                    tasks.mensaje_logica = error;
+        //                else
+        //                    tasks.cod_usuario = codigoUsuario;
+
+        //                response = response == null ? response!.Append(tasks) : default!;
+        //            }
+        //            return Task.FromResult(response);
+        //        }
+        //    }
+        //}
     }
 }
+
 

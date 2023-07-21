@@ -1,6 +1,7 @@
 ﻿using OdontoBackend.Aplicacion.Mappers.Contracts;
 using OdontoBackend.Aplicacion.Services.Contracts;
 using OdontoBackend.Aplicacion.ViewModels;
+using OdontoBackend.Aplication.Entities.Commands;
 using OdontoBackend.Aplication.Entities.Queries;
 using OdontoBackend.Domain.Contracts;
 using OdontoBackend.Domain.Models;
@@ -34,7 +35,13 @@ namespace OdontoBackend.Aplicacion.Services
             var _result = _response.Result?.Count() > 0 ? _mapper.UserQueryFromUserByCiPas(Task.FromResult(_response.Result.FirstOrDefault()!)) : default!;
             return Task.FromResult(_result);
         }
-       
+        public Task<IQueryable<UserViewModel>> SaveRegisterUser(Task<UserCommand> request)
+        {
+            var _request = _mapper.UserCommandToRegisterUser(request);
+            var _response = _repository.SaveRegisterUser(_request.FirstOrDefault()!);
+            var _result = _response.Result?.Count() > 0 ? _mapper.UserCommandFromRegisterUser(Task.FromResult(_response.Result.FirstOrDefault()!)) : default!;
+            return Task.FromResult(_result);
+        }
 
     }
 }

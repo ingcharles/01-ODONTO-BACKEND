@@ -1,5 +1,6 @@
 ﻿using OdontoBackend.Aplicacion.Mappers.Contracts;
 using OdontoBackend.Aplicacion.ViewModels;
+using OdontoBackend.Aplication.Entities.Commands;
 using OdontoBackend.Aplication.Entities.Queries;
 using OdontoBackend.Domain.Models;
 using System;
@@ -18,7 +19,6 @@ namespace OdontoBackend.Aplicacion.Mappers
             {
                 new User
                 {
-                   // COD_UNI_User = source.Result.codigoUnico
                     dni_usuario = source.Result.ci,
                     pas_usuario = source.Result.password
                 }
@@ -37,5 +37,38 @@ namespace OdontoBackend.Aplicacion.Mappers
                 }
             }.AsQueryable();
         }
+        public IQueryable<User> UserCommandToRegisterUser(Task<UserCommand> source)
+        {
+            return new List<User>
+            {
+                new User
+                {
+                    dni_usuario = source.Result.ci,
+                    pas_usuario = source.Result.password,
+                    mai_usuario = source.Result.email,
+                    nom_usuario = source.Result.names,
+                    ape_usuario = source.Result.lastNames,
+                    lic_agr_usuario = source.Result.licenseAgreement,
+                    is_pro_usuario = source.Result.isProfesional,
+                    is_cli_usuario = source.Result.isClinic,
+       
+                    
+    }
+            }.AsQueryable();
+        }
+        public IQueryable<UserViewModel> UserCommandFromRegisterUser(Task<UserCommandFrom> source)
+        {
+            return new List<UserViewModel>
+            {
+                new UserViewModel
+                {
+                    codigoUsuario = source.Result.cod_usuario,
+                    mensajeLogica = source.Result.mensaje_logica
+
+
+                }
+            }.AsQueryable();
+        }
+
     }
 }
