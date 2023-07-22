@@ -121,32 +121,36 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\USER\\.nuget\\packages\\": {},
-    "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages": {}
+    "C:\\Users\\CARLOS\\.nuget\\packages\\": {},
+    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USER\\Source\\Repos\\01-ODONTO-BACKEND\\OdontoBackend.Infrastructure.Contracts\\OdontoBackend.Infrastructure.Contracts.csproj",
+      "projectUniqueName": "C:\\Users\\CARLOS\\source\\repos\\01-ODONTO-BACKEND\\OdontoBackend.Infrastructure.Contracts\\OdontoBackend.Infrastructure.Contracts.csproj",
       "projectName": "OdontoBackend.Infrastructure.Contracts",
-      "projectPath": "C:\\Users\\USER\\Source\\Repos\\01-ODONTO-BACKEND\\OdontoBackend.Infrastructure.Contracts\\OdontoBackend.Infrastructure.Contracts.csproj",
-      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER\\Source\\Repos\\01-ODONTO-BACKEND\\OdontoBackend.Infrastructure.Contracts\\obj\\",
+      "projectPath": "C:\\Users\\CARLOS\\source\\repos\\01-ODONTO-BACKEND\\OdontoBackend.Infrastructure.Contracts\\OdontoBackend.Infrastructure.Contracts.csproj",
+      "packagesPath": "C:\\Users\\CARLOS\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\CARLOS\\source\\repos\\01-ODONTO-BACKEND\\OdontoBackend.Infrastructure.Contracts\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
+        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\CARLOS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
