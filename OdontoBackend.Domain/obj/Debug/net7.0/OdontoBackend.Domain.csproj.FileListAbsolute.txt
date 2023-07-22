@@ -10,3 +10,15 @@ C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Domain\obj\Debug\ne
 C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Domain\obj\Debug\net7.0\refint\OdontoBackend.Domain.dll
 C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Domain\obj\Debug\net7.0\OdontoBackend.Domain.pdb
 C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Domain\obj\Debug\net7.0\ref\OdontoBackend.Domain.dll
+C:\Users\USER\Source\Repos\01-ODONTO-BACKEND\OdontoBackend.Domain\bin\Debug\net7.0\OdontoBackend.Domain.deps.json
+C:\Users\USER\Source\Repos\01-ODONTO-BACKEND\OdontoBackend.Domain\bin\Debug\net7.0\OdontoBackend.Domain.dll
+C:\Users\USER\Source\Repos\01-ODONTO-BACKEND\OdontoBackend.Domain\bin\Debug\net7.0\OdontoBackend.Domain.pdb
+C:\Users\USER\Source\Repos\01-ODONTO-BACKEND\OdontoBackend.Domain\obj\Debug\net7.0\OdontoBackend.Domain.csproj.AssemblyReference.cache
+C:\Users\USER\Source\Repos\01-ODONTO-BACKEND\OdontoBackend.Domain\obj\Debug\net7.0\OdontoBackend.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Source\Repos\01-ODONTO-BACKEND\OdontoBackend.Domain\obj\Debug\net7.0\OdontoBackend.Domain.AssemblyInfoInputs.cache
+C:\Users\USER\Source\Repos\01-ODONTO-BACKEND\OdontoBackend.Domain\obj\Debug\net7.0\OdontoBackend.Domain.AssemblyInfo.cs
+C:\Users\USER\Source\Repos\01-ODONTO-BACKEND\OdontoBackend.Domain\obj\Debug\net7.0\OdontoBackend.Domain.csproj.CoreCompileInputs.cache
+C:\Users\USER\Source\Repos\01-ODONTO-BACKEND\OdontoBackend.Domain\obj\Debug\net7.0\OdontoBackend.Domain.dll
+C:\Users\USER\Source\Repos\01-ODONTO-BACKEND\OdontoBackend.Domain\obj\Debug\net7.0\refint\OdontoBackend.Domain.dll
+C:\Users\USER\Source\Repos\01-ODONTO-BACKEND\OdontoBackend.Domain\obj\Debug\net7.0\OdontoBackend.Domain.pdb
+C:\Users\USER\Source\Repos\01-ODONTO-BACKEND\OdontoBackend.Domain\obj\Debug\net7.0\ref\OdontoBackend.Domain.dll

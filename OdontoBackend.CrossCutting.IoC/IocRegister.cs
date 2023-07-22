@@ -35,6 +35,8 @@ namespace OdontoBackend.CrossCutting.IoC
             services.AddScoped<ICatalogoService, CatalogoService>();
             services.AddScoped<IUserMapper, UserMapper>();
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IMailService, MailService>();
+
             #endregion
 
             #region Domain-Infrastructure Layer

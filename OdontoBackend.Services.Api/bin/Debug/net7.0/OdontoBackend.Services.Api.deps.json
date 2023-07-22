@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v7.0": {
       "OdontoBackend.Services.Api/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.OpenApi": "7.0.7",
+          "MailKit": "3.5.0",
+          "Microsoft.AspNetCore.OpenApi": "7.0.9",
           "OdontoBackend.Aplicacion": "1.0.0",
           "OdontoBackend.Common.Logs": "1.0.0",
           "OdontoBackend.CrossCutting.IoC": "1.0.0",
@@ -27,6 +28,17 @@
           }
         }
       },
+      "MailKit/3.5.0": {
+        "dependencies": {
+          "MimeKit": "3.5.0"
+        },
+        "runtime": {
+          "lib/net6.0/MailKit.dll": {
+            "assemblyVersion": "3.5.0.0",
+            "fileVersion": "3.5.0.0"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Features": "2.2.0",
@@ -38,14 +50,14 @@
           "Microsoft.Extensions.Primitives": "7.0.0"
         }
       },
-      "Microsoft.AspNetCore.OpenApi/7.0.7": {
+      "Microsoft.AspNetCore.OpenApi/7.0.9": {
         "dependencies": {
           "Microsoft.OpenApi": "1.4.3"
         },
         "runtime": {
           "lib/net7.0/Microsoft.AspNetCore.OpenApi.dll": {
-            "assemblyVersion": "7.0.7.0",
-            "fileVersion": "7.0.723.27408"
+            "assemblyVersion": "7.0.9.0",
+            "fileVersion": "7.0.923.32110"
           }
         }
       },
@@ -70,6 +82,20 @@
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {
             "assemblyVersion": "1.4.3.0",
             "fileVersion": "1.4.3.0"
+          }
+        }
+      },
+      "MimeKit/3.5.0": {
+        "dependencies": {
+          "Portable.BouncyCastle": "1.9.0",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
+          "System.Security.Cryptography.Pkcs": "6.0.0",
+          "System.Text.Encoding.CodePages": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/MimeKit.dll": {
+            "assemblyVersion": "3.5.0.0",
+            "fileVersion": "3.5.0.0"
           }
         }
       },
@@ -100,6 +126,14 @@
           "lib/net462/Oracle.ManagedDataAccess.dll": {
             "assemblyVersion": "4.122.21.1",
             "fileVersion": "4.122.21.1"
+          }
+        }
+      },
+      "Portable.BouncyCastle/1.9.0": {
+        "runtime": {
+          "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
+            "assemblyVersion": "1.9.0.0",
+            "fileVersion": "1.9.0.1"
           }
         }
       },
@@ -152,7 +186,18 @@
           }
         }
       },
+      "System.Formats.Asn1/6.0.0": {},
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
+      "System.Security.Cryptography.Pkcs/6.0.0": {
+        "dependencies": {
+          "System.Formats.Asn1": "6.0.0"
+        }
+      },
+      "System.Text.Encoding.CodePages/6.0.0": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        }
+      },
       "System.Text.Encodings.Web/6.0.0": {
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
@@ -243,6 +288,13 @@
       "path": "fluentvalidation/11.5.2",
       "hashPath": "fluentvalidation.11.5.2.nupkg.sha512"
     },
+    "MailKit/3.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7tvc+Um6JWOgvAv4I7DhPEDbHVaRH06m1ECZoJw2n9cyBcCZbyZy4AhVhTxGjM/vFYogh+UDboOnn7xd7WRV1Q==",
+      "path": "mailkit/3.5.0",
+      "hashPath": "mailkit.3.5.0.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
       "type": "package",
       "serviceable": true,
@@ -257,12 +309,12 @@
       "path": "microsoft.aspnetcore.http.features/2.2.0",
       "hashPath": "microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.OpenApi/7.0.7": {
+    "Microsoft.AspNetCore.OpenApi/7.0.9": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-6E1I154QELFjQ4RvSWwZAlZrvB2Dy3aOkcYAQ+E4NsyqwKqFbG10HeWp/WJfq+2btUz1dKzmNMwnADf8WBk/0w==",
-      "path": "microsoft.aspnetcore.openapi/7.0.7",
-      "hashPath": "microsoft.aspnetcore.openapi.7.0.7.nupkg.sha512"
+      "sha512": "sha512-5kBnHntQTJqmYV66Khdl9OJ/j2Pw8cOKj8kNQuLCpfCsPbSijp334Vaad3vaGnG9Wpgq/VbSUSRxZOoroOe8zQ==",
+      "path": "microsoft.aspnetcore.openapi/7.0.9",
+      "hashPath": "microsoft.aspnetcore.openapi.7.0.9.nupkg.sha512"
     },
     "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
       "type": "package",
@@ -306,6 +358,13 @@
       "path": "microsoft.openapi/1.4.3",
       "hashPath": "microsoft.openapi.1.4.3.nupkg.sha512"
     },
+    "MimeKit/3.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XHRxnUJjNC6ufN94Yixp0QaLAZL+4L3huwzBhG5grBn68FQo3lH24gHKl15ceK4ktsALTqxdKPc/iMbQ442CGA==",
+      "path": "mimekit/3.5.0",
+      "hashPath": "mimekit.3.5.0.nupkg.sha512"
+    },
     "Newtonsoft.Json/13.0.3": {
       "type": "package",
       "serviceable": true,
@@ -326,6 +385,13 @@
       "sha512": "sha512-7ddObNDUkj1JinF16OmL5rTizmsrcbWDWrN5FAGrt0fWB3vxdLi2XExTq2mAk8Y3ESGWaQXn+9Mx5mTzjGHErA==",
       "path": "oracle.manageddataaccess/21.10.0",
       "hashPath": "oracle.manageddataaccess.21.10.0.nupkg.sha512"
+    },
+    "Portable.BouncyCastle/1.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eZZBCABzVOek+id9Xy04HhmgykF0wZg9wpByzrWN7q8qEI0Qen9b7tfd7w8VA3dOeesumMG7C5ZPy0jk7PSRHw==",
+      "path": "portable.bouncycastle/1.9.0",
+      "hashPath": "portable.bouncycastle.1.9.0.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore/6.5.0": {
       "type": "package",
@@ -362,12 +428,33 @@
       "path": "swashbuckle.aspnetcore.swaggerui/6.5.0",
       "hashPath": "swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
     },
+    "System.Formats.Asn1/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-T6fD00dQ3NTbPDy31m4eQUwKW84s03z0N2C8HpOklyeaDgaJPa/TexP4/SkORMSOwc7WhKifnA6Ya33AkzmafA==",
+      "path": "system.formats.asn1/6.0.0",
+      "hashPath": "system.formats.asn1.6.0.0.nupkg.sha512"
+    },
     "System.Runtime.CompilerServices.Unsafe/6.0.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
       "path": "system.runtime.compilerservices.unsafe/6.0.0",
       "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    },
+    "System.Security.Cryptography.Pkcs/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-elM3x+xSRhzQysiqo85SbidJJ2YbZlnvmh+53TuSZHsD7dNuuEWser+9EFtY+rYupBwkq2avc6ZCO3/6qACgmg==",
+      "path": "system.security.cryptography.pkcs/6.0.0",
+      "hashPath": "system.security.cryptography.pkcs.6.0.0.nupkg.sha512"
+    },
+    "System.Text.Encoding.CodePages/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZFCILZuOvtKPauZ/j/swhvw68ZRi9ATCfvGbk1QfydmcXBkIWecWKn/250UH7rahZ5OoDBaiAudJtPvLwzw85A==",
+      "path": "system.text.encoding.codepages/6.0.0",
+      "hashPath": "system.text.encoding.codepages.6.0.0.nupkg.sha512"
     },
     "System.Text.Encodings.Web/6.0.0": {
       "type": "package",
