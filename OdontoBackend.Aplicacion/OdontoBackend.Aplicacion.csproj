@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MailKit" Version="4.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="7.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\OdontoBackend.Aplication.Entities\OdontoBackend.Aplication.Entities.csproj" />
     <ProjectReference Include="..\OdontoBackend.Domain\OdontoBackend.Domain.csproj" />
   </ItemGroup>
