@@ -15,5 +15,10 @@ namespace OdontoBackend.Aplicacion.Services.Contracts
         Task<IQueryable<UserViewModel>> GetUserByCiPas(Task<UserByCiPasQuery> request);
 
         Task<IQueryable<UserViewModel>> SaveRegisterUser(Task<UserCommand> request);
+
+            Task<IQueryable<User>> GetTokensCodUsuario(Task<UserByCodUsuarioQuery> request);
+
+        Task<IQueryable<User>> UpdateTokensCodUsuario(Task<User> request);
+
     }
 }

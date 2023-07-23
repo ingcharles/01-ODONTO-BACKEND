@@ -15,7 +15,10 @@ namespace OdontoBackend.Aplicacion.Mappers.Contracts
         public IQueryable<User> UserQueryToUserByCiPas(Task<UserByCiPasQuery> source);
         public IQueryable<UserViewModel> UserQueryFromUserByCiPas(Task<User> source);
         public IQueryable<User> UserCommandToRegisterUser(Task<UserCommand> source);
+      
         public IQueryable<UserViewModel> UserCommandFromRegisterUser(Task<UserCommandFrom> source);
-        
+        public IQueryable<User> UserCommandToUpdateTokens(Task<User> source);
+        public IQueryable<User> UserCommandFromUpdateTokens(Task<User> source);
+
     }
 }

@@ -59,9 +59,17 @@
               "target": "Package",
               "version": "[4.1.0, )"
             },
+            "Microsoft.AspNetCore.Cryptography.KeyDerivation": {
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
             "Microsoft.Extensions.Options": {
               "target": "Package",
               "version": "[7.0.1, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.32.0, )"
             }
           },
           "imports": [

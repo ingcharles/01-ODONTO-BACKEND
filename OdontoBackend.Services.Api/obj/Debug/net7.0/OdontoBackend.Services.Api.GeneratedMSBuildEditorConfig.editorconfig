@@ -15,3 +15,7 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/CARLOS/source/repos/01-ODONTO-BACKEND/OdontoBackend.Services.Api/TemplatesMail/Template2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = VGVtcGxhdGVzTWFpbFxUZW1wbGF0ZTIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 

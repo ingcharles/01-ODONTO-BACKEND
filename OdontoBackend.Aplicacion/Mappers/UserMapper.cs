@@ -51,9 +51,9 @@ namespace OdontoBackend.Aplicacion.Mappers
                     lic_agr_usuario = source.Result.licenseAgreement,
                     is_pro_usuario = source.Result.isProfesional,
                     is_cli_usuario = source.Result.isClinic,
-       
-                    
-    }
+
+
+                }
             }.AsQueryable();
         }
         public IQueryable<UserViewModel> UserCommandFromRegisterUser(Task<UserCommandFrom> source)
@@ -70,5 +70,33 @@ namespace OdontoBackend.Aplicacion.Mappers
             }.AsQueryable();
         }
 
+        public IQueryable<User> UserCommandToUpdateTokens(Task<User> source)
+        {
+            return new List<User>
+            {
+                new User
+                {
+                    cod_usuario = source.Result.cod_usuario,
+                    RefreshTokens = source.Result.RefreshTokens,
+
+
+
+                }
+            }.AsQueryable();
+        }
+        public IQueryable<User> UserCommandFromUpdateTokens(Task<User> source)
+        {
+            return new List<User>
+            {
+                new User
+                {
+                    cod_usuario = source.Result.cod_usuario,
+                    mensaje_logica = source.Result.mensaje_logica
+
+
+                }
+            }.AsQueryable();
+        }
+       
     }
 }

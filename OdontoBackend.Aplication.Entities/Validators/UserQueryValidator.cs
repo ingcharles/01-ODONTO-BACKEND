@@ -11,6 +11,7 @@ namespace OdontoBackend.Aplication.Entities.Validators
 {
     public class UserQueryValidator : AbstractValidator<UserByCiPasQuery>
     {
+
         public UserQueryValidator()
         {
 

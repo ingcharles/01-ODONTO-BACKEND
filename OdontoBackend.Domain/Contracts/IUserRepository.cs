@@ -11,5 +11,6 @@ namespace OdontoBackend.Domain.Contracts
     {
         Task<IQueryable<User>> GetUserByCiPas(User request);
         Task<IQueryable<UserCommandFrom>> SaveRegisterUser(User request);
+        Task<IQueryable<User>> UpdateTokensCodUsuario(User request);
     }
 }
