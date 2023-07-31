@@ -1,4 +1,5 @@
-﻿using OdontoBackend.Aplication.Entities.Commands;
+﻿using OdontoBackend.Aplicacion.ViewModels;
+using OdontoBackend.Aplication.Entities.Commands;
 using OdontoBackend.Domain.Models;
 using System;
 using System.Collections.Generic;
@@ -11,8 +12,8 @@ namespace OdontoBackend.Aplicacion.Services.Contracts
     public interface ITokenService
     {
 
-        Task<Tuple<string, string>> GenerateTokensAsync(User user);
+        Task<Tuple<string, string>> GenerateTokensAsync(UserViewModel user);
         Task<ValidateRefreshTokenResponse> ValidateRefreshTokenAsync(RefreshTokenRequest refreshTokenRequest);
-        Task<bool> RemoveRefreshTokenAsync(User user);
+        Task<bool> RemoveRefreshTokenAsync(UserViewModel user);
     }
 }

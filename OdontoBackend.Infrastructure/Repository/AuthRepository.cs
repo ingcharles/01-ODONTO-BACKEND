@@ -40,7 +40,7 @@ namespace OdontoBackend.Infrastructure.Repository
                 {
                     using (NpgsqlCommand cmd = connection.CreateCommand())
                     {
-                        cmd.CommandText = UtilsContextDatabase.ToDescriptionString(Packages.pkg.esq_usuarios) + "get_user_by_cod_pas";
+                        cmd.CommandText = UtilsContextDatabase.ToDescriptionString(Packages.pkg.esq_usuarios) + "get_user_by_ci_pas";
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.Add("i_dni_usuario", NpgsqlDbType.Varchar).Value = request.dni_usuario;
                         cmd.Parameters.Add("i_pas_usuario", NpgsqlDbType.Varchar).Value = request.pas_usuario;
@@ -63,11 +63,11 @@ namespace OdontoBackend.Infrastructure.Repository
                         //if (error?.Length > 0) throw new Exception(error);
                         if (error?.Length > 0)
                         {
-                            request.mensaje_logica = error;
+                            request.mensaje_logica = "Usuario no encontrado";
                         }
-                        //result = response.Count() > 0 ? response.Append(request) : result1.Append(request);
+                        response = response is null ? response.Append(request) : response;
                     }
-                    return Task.FromResult(response.Append(request));
+                    return Task.FromResult(response);
                     //return Task.FromResult(response.Count() > 0 ? response : request);
                     // return Task.FromResult(response.Count() > 0 ? response : default!);
                     //     error = (OracleString)cmd.Parameters["O_ERROR"].Value != null ? (string)(OracleString)cmd.Parameters["O_ERROR"].Value
@@ -176,10 +176,11 @@ namespace OdontoBackend.Infrastructure.Repository
                         cmd.CommandText = UtilsContextDatabase.ToDescriptionString(Packages.pkg.esq_usuarios) + "update_token_user";
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.Add("i_cod_usuario", NpgsqlDbType.Bigint).Value = request.cod_usuario;
-                        var jsonString = JsonConvert.SerializeObject(request.RefreshTokens);
+                        var jsonString = JsonConvert.SerializeObject(request.refresh_tokens);
                         cmd.Parameters.Add("i_ref_token_usuario", NpgsqlDbType.Jsonb).Value = jsonString;
  
                         cmd.Parameters.Add(new NpgsqlParameter("o_cod_usuario", NpgsqlDbType.Bigint) { Direction = ParameterDirection.InputOutput, Value = 0 });
+                        //cmd.Parameters.Add(new NpgsqlParameter("o_nom_usuario", NpgsqlDbType.Bigint) { Direction = ParameterDirection.InputOutput, Value = 0 });
                         cmd.Parameters.Add(new NpgsqlParameter("o_error", NpgsqlDbType.Varchar) { Direction = ParameterDirection.InputOutput, Value = "" });
                         int response = cmd.ExecuteNonQuery();
                         scope.Complete();
@@ -193,6 +194,7 @@ namespace OdontoBackend.Infrastructure.Repository
                         else
                         {
                             resultResponse.cod_usuario = (Int64)cmd.Parameters["o_cod_usuario"].Value!;
+                           // resultResponse.nom_usuario = (string)cmd.Parameters["o_nom_usuario"].Value!;
                         }
 
                         result = response == -1 ? result.Append(resultResponse) : default!;
@@ -204,6 +206,92 @@ namespace OdontoBackend.Infrastructure.Repository
             }
         }
 
+        //public Task<IQueryable<User>> GetUserByCod(User request)
+        //{
+
+        //    using (var scope = new TransactionScope())
+        //    {
+        //        using (var connection = _context.GetConnection())
+        //        {
+
+        //            var result = Enumerable.Empty<User>().AsQueryable();
+        //            User resultResponse = new User();
+        //            using (NpgsqlCommand cmd = connection.CreateCommand())
+        //            {
+        //                cmd.CommandText = UtilsContextDatabase.ToDescriptionString(Packages.pkg.esq_usuarios) + "get_user_by_cod";
+        //                cmd.CommandType = CommandType.StoredProcedure;
+        //                cmd.Parameters.Add("i_cod_usuario", NpgsqlDbType.Bigint).Value = request.cod_usuario;
+        //                           cmd.Parameters.Add(new NpgsqlParameter("o_cod_usuario", NpgsqlDbType.Bigint) { Direction = ParameterDirection.InputOutput, Value = 0 });
+        //                cmd.Parameters.Add(new NpgsqlParameter("o_error", NpgsqlDbType.Varchar) { Direction = ParameterDirection.InputOutput, Value = "" });
+        //                /*int response = cmd.ExecuteNonQuery();*/
+        //                //var result1 = _context.ExecuteList<User>(cmd, ref error);
+        //                int response = cmd.ExecuteNonQuery();
+        //                scope.Complete();
+        //                connection.Close();
+        //                error = (string)cmd.Parameters["o_error"].Value!;
+        //                //: "";
+        //                if (error?.Length > 0)
+        //                {
+        //                    resultResponse.mensaje_logica = error;
+        //                }
+        //                else
+        //                {
+        //                    resultResponse.cod_usuario = Convert.ToInt64(cmd.Parameters["o_cod_usuario"].Value!);
+        //                }
+
+        //                result =  result.Append(resultResponse);
+
+        //            }
+
+        //            return Task.FromResult(result);
+        //        }
+        //    }
+        //}
+        public Task<IQueryable<User>> GetUserByCod(User request)
+        {
+
+            using (var scope = new TransactionScope())
+            {
+                using (var connection = _context.GetConnection())
+                {
+                    User resultResponse = new User();
+
+                    using (NpgsqlCommand cmd = connection.CreateCommand())
+                    {
+                        cmd.CommandText = UtilsContextDatabase.ToDescriptionString(Packages.pkg.esq_usuarios) + "get_user_by_cod";
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.Add("i_cod_usuario", NpgsqlDbType.Bigint).Value = request.cod_usuario;
+                        cmd.Parameters.Add(new NpgsqlParameter("o_cursor", NpgsqlDbType.Refcursor) { Direction = ParameterDirection.InputOutput, Value = "o_cursor_one" });
+                        cmd.ExecuteNonQuery();
+                    }
+                    var result = Enumerable.Empty<User>().AsQueryable();
+                    using (NpgsqlCommand cmd1 = connection.CreateCommand())
+                    {
+                        //cmd.CommandText = "fetch all in \"<unnamed portal 1>\"";
+                        cmd1.CommandText = "fetch all in \"o_cursor_one\"";
+                        cmd1.CommandType = CommandType.Text;
+
+
+                        var response = _context.ExecuteListWithOneClass<User>(cmd1, ref error, new List<RefreshToken>());
+                        scope.Complete();
+  
+                        if (error?.Length > 0)
+                        {
+                            resultResponse.mensaje_logica = "Usuario no encontrado";
+                        }
+
+                        result = response is null ? result.Append(resultResponse) : response;
+
+                    }
+                    return Task.FromResult(result);
+
+
+
+                }
+
+            }
+
+        }
 
         //public Task<IQueryable<UserCommandFrom>> SaveRegisterUser(User request)
         //{

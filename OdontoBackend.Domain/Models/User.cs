@@ -18,7 +18,7 @@ namespace OdontoBackend.Domain.Models
 
         {
 
-            this.RefreshTokens = refreshTokens;
+            this.refresh_tokens = refreshTokens;
             //Tasks = new HashSet<Task>();
 
 
@@ -35,6 +35,6 @@ namespace OdontoBackend.Domain.Models
         public Boolean? is_pro_usuario { get; set; } = default!;
         public Boolean? is_cli_usuario { get; set; } = default!;
         public string mensaje_logica { get; set; } = default!;
-        public List<RefreshToken> RefreshTokens { get; set; } = default!;
+        public List<RefreshToken> refresh_tokens { get; set; } = default!;
     }
 }

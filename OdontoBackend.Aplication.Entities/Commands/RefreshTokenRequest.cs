@@ -8,8 +8,8 @@ namespace OdontoBackend.Aplication.Entities.Commands
 {
     public class RefreshTokenRequest
     {
-        public int UserId { get; set; }
-        public string RefreshToken { get; set; }
+        public Int64? codigoUsuario { get; set; }
+        public string refreshToken { get; set; }
 
     }
 }

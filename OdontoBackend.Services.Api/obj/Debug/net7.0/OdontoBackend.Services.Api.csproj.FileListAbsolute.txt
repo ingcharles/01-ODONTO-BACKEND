@@ -55,14 +55,6 @@ C:\Users\USER\Source\Repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\bin\Debu
 C:\Users\USER\Source\Repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\bin\Debug\net7.0\MailKit.dll
 C:\Users\USER\Source\Repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\bin\Debug\net7.0\MimeKit.dll
 C:\Users\USER\Source\Repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\bin\Debug\net7.0\BouncyCastle.Crypto.dll
-C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\obj\Debug\net7.0\OdontoBackend.Services.Api.csproj.AssemblyReference.cache
-C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\obj\Debug\net7.0\OdontoBackend.Services.Api.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\obj\Debug\net7.0\OdontoBackend.Services.Api.AssemblyInfoInputs.cache
-C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\obj\Debug\net7.0\OdontoBackend.Services.Api.AssemblyInfo.cs
-C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\obj\Debug\net7.0\OdontoBackend.Services.Api.csproj.CoreCompileInputs.cache
-C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\obj\Debug\net7.0\OdontoBackend.Services.Api.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\obj\Debug\net7.0\OdontoBackend.Services.Api.RazorAssemblyInfo.cache
-C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\obj\Debug\net7.0\OdontoBackend.Services.Api.RazorAssemblyInfo.cs
 C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\bin\Debug\net7.0\appsettings.json
 C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\bin\Debug\net7.0\libman.json
@@ -112,6 +104,15 @@ C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\bin\De
 C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\bin\Debug\net7.0\OdontoBackend.Domain.pdb
 C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\bin\Debug\net7.0\OdontoBackend.Infrastructure.pdb
 C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\bin\Debug\net7.0\OdontoBackend.Infrastructure.Contracts.pdb
+C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\obj\Debug\net7.0\OdontoBackend.Services.Api.csproj.AssemblyReference.cache
+C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\obj\Debug\net7.0\OdontoBackend.Services.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\obj\Debug\net7.0\OdontoBackend.Services.Api.AssemblyInfoInputs.cache
+C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\obj\Debug\net7.0\OdontoBackend.Services.Api.AssemblyInfo.cs
+C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\obj\Debug\net7.0\OdontoBackend.Services.Api.csproj.CoreCompileInputs.cache
+C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\obj\Debug\net7.0\OdontoBackend.Services.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\obj\Debug\net7.0\OdontoBackend.Services.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\obj\Debug\net7.0\OdontoBackend.Services.Api.RazorAssemblyInfo.cache
+C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\obj\Debug\net7.0\OdontoBackend.Services.Api.RazorAssemblyInfo.cs
 C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\obj\Debug\net7.0\staticwebassets\msbuild.OdontoBackend.Services.Api.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\obj\Debug\net7.0\staticwebassets\msbuild.build.OdontoBackend.Services.Api.props
 C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.OdontoBackend.Services.Api.props
@@ -126,4 +127,3 @@ C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\obj\De
 C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\obj\Debug\net7.0\OdontoBackend.Services.Api.pdb
 C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\obj\Debug\net7.0\OdontoBackend.Services.Api.genruntimeconfig.cache
 C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\obj\Debug\net7.0\ref\OdontoBackend.Services.Api.dll
-C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\obj\Debug\net7.0\OdontoBackend.Services.Api.MvcApplicationPartsAssemblyInfo.cs

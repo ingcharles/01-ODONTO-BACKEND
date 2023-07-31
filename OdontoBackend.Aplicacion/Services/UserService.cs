@@ -2,7 +2,7 @@
 using OdontoBackend.Aplicacion.Services.Contracts;
 using OdontoBackend.Aplicacion.ViewModels;
 using OdontoBackend.Aplication.Entities.Commands;
-using OdontoBackend.Aplication.Entities.Queries;
+using OdontoBackend.Aplication.Entities.Queries.User;
 using OdontoBackend.Domain.Contracts;
 using OdontoBackend.Domain.Models;
 using System;
@@ -46,23 +46,23 @@ namespace OdontoBackend.Aplicacion.Services
             return Task.FromResult(_result);
         }
 
-        public Task<IQueryable<User>> GetTokensCodUsuario(Task<UserByCodUsuarioQuery> request)
+        public Task<IQueryable<UserViewModel>> GetUserByCod(Task<UserByCodQuery> request)
         {
-            //var _request = _mapper.UserCommandToGetToken(request);
-            //var _response = _repository.GetTokensCodUsuario(_request.FirstOrDefault()!);
-            //var _result = _response.Result?.Count() > 0 ? _mapper.UserCommandFromGetToken(Task.FromResult(_response.Result.FirstOrDefault()!)) : default!;
-            //return Task.FromResult(_result);
-            var result = Enumerable.Empty<User>().AsQueryable();
-            return Task.FromResult(result);
+            var _request = _mapper.UserQueryToUserByCod(request);
+            var _response = _repository.GetUserByCod(_request.FirstOrDefault()!);
+            var _result = _response.Result?.Count() > 0 ? _mapper.UserQueryFromUserByCod(Task.FromResult(_response.Result.FirstOrDefault()!)) : default!;
+            return Task.FromResult(_result);
+            //var result = Enumerable.Empty<User>().AsQueryable();
+            //return Task.FromResult(result);
         }
-        public Task<IQueryable<User>> UpdateTokensCodUsuario(Task<User> request)
+        public Task<IQueryable<User>> UpdateTokensCodUsuario(Task<UserViewModel> request)
         {
             Debug.WriteLine("request" + request);
             var _request = _mapper.UserCommandToUpdateTokens(request);
             var _response = _repository.UpdateTokensCodUsuario(_request.FirstOrDefault()!);
             var _result = _response.Result?.Count() > 0 ? _mapper.UserCommandFromUpdateTokens(Task.FromResult(_response.Result.FirstOrDefault()!)) : default!;
             return Task.FromResult(_result);
-            return default;
+
         }
 
       

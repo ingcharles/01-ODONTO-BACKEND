@@ -23,11 +23,6 @@ C:\Users\USER\Source\Repos\01-ODONTO-BACKEND\OdontoBackend.CrossCutting.IoC\obj\
 C:\Users\USER\Source\Repos\01-ODONTO-BACKEND\OdontoBackend.CrossCutting.IoC\obj\Debug\net7.0\refint\OdontoBackend.CrossCutting.IoC.dll
 C:\Users\USER\Source\Repos\01-ODONTO-BACKEND\OdontoBackend.CrossCutting.IoC\obj\Debug\net7.0\OdontoBackend.CrossCutting.IoC.pdb
 C:\Users\USER\Source\Repos\01-ODONTO-BACKEND\OdontoBackend.CrossCutting.IoC\obj\Debug\net7.0\ref\OdontoBackend.CrossCutting.IoC.dll
-C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.CrossCutting.IoC\obj\Debug\net7.0\OdontoBackend.CrossCutting.IoC.csproj.AssemblyReference.cache
-C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.CrossCutting.IoC\obj\Debug\net7.0\OdontoBackend.CrossCutting.IoC.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.CrossCutting.IoC\obj\Debug\net7.0\OdontoBackend.CrossCutting.IoC.AssemblyInfoInputs.cache
-C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.CrossCutting.IoC\obj\Debug\net7.0\OdontoBackend.CrossCutting.IoC.AssemblyInfo.cs
-C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.CrossCutting.IoC\obj\Debug\net7.0\OdontoBackend.CrossCutting.IoC.csproj.CoreCompileInputs.cache
 C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.CrossCutting.IoC\bin\Debug\net7.0\OdontoBackend.CrossCutting.IoC.deps.json
 C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.CrossCutting.IoC\bin\Debug\net7.0\OdontoBackend.CrossCutting.IoC.dll
 C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.CrossCutting.IoC\bin\Debug\net7.0\OdontoBackend.CrossCutting.IoC.pdb
@@ -43,6 +38,11 @@ C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.CrossCutting.IoC\bi
 C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.CrossCutting.IoC\bin\Debug\net7.0\OdontoBackend.Aplication.Entities.pdb
 C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.CrossCutting.IoC\bin\Debug\net7.0\OdontoBackend.Common.Logs.pdb
 C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.CrossCutting.IoC\bin\Debug\net7.0\OdontoBackend.Domain.pdb
+C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.CrossCutting.IoC\obj\Debug\net7.0\OdontoBackend.CrossCutting.IoC.csproj.AssemblyReference.cache
+C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.CrossCutting.IoC\obj\Debug\net7.0\OdontoBackend.CrossCutting.IoC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.CrossCutting.IoC\obj\Debug\net7.0\OdontoBackend.CrossCutting.IoC.AssemblyInfoInputs.cache
+C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.CrossCutting.IoC\obj\Debug\net7.0\OdontoBackend.CrossCutting.IoC.AssemblyInfo.cs
+C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.CrossCutting.IoC\obj\Debug\net7.0\OdontoBackend.CrossCutting.IoC.csproj.CoreCompileInputs.cache
 C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.CrossCutting.IoC\obj\Debug\net7.0\OdontoBackend.CrossCutting.IoC.csproj.CopyComplete
 C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.CrossCutting.IoC\obj\Debug\net7.0\OdontoBackend.CrossCutting.IoC.dll
 C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.CrossCutting.IoC\obj\Debug\net7.0\refint\OdontoBackend.CrossCutting.IoC.dll
