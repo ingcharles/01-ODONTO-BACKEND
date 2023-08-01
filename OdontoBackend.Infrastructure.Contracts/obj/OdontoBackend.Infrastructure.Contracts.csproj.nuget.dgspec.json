@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USER\\Source\\Repos\\01-ODONTO-BACKEND\\OdontoBackend.Infrastructure.Contracts\\OdontoBackend.Infrastructure.Contracts.csproj": {}
+    "C:\\Users\\USER\\source\\repos\\01-ODONTO-BACKEND\\OdontoBackend.Infrastructure.Contracts\\OdontoBackend.Infrastructure.Contracts.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USER\\Source\\Repos\\01-ODONTO-BACKEND\\OdontoBackend.Infrastructure.Contracts\\OdontoBackend.Infrastructure.Contracts.csproj": {
+    "C:\\Users\\USER\\source\\repos\\01-ODONTO-BACKEND\\OdontoBackend.Infrastructure.Contracts\\OdontoBackend.Infrastructure.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Source\\Repos\\01-ODONTO-BACKEND\\OdontoBackend.Infrastructure.Contracts\\OdontoBackend.Infrastructure.Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\source\\repos\\01-ODONTO-BACKEND\\OdontoBackend.Infrastructure.Contracts\\OdontoBackend.Infrastructure.Contracts.csproj",
         "projectName": "OdontoBackend.Infrastructure.Contracts",
-        "projectPath": "C:\\Users\\USER\\Source\\Repos\\01-ODONTO-BACKEND\\OdontoBackend.Infrastructure.Contracts\\OdontoBackend.Infrastructure.Contracts.csproj",
+        "projectPath": "C:\\Users\\USER\\source\\repos\\01-ODONTO-BACKEND\\OdontoBackend.Infrastructure.Contracts\\OdontoBackend.Infrastructure.Contracts.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\Source\\Repos\\01-ODONTO-BACKEND\\OdontoBackend.Infrastructure.Contracts\\obj\\",
+        "outputPath": "C:\\Users\\USER\\source\\repos\\01-ODONTO-BACKEND\\OdontoBackend.Infrastructure.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"

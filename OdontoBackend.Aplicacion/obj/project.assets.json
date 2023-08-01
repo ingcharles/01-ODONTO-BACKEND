@@ -809,11 +809,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USER\\Source\\Repos\\01-ODONTO-BACKEND\\OdontoBackend.Aplicacion\\OdontoBackend.Aplicacion.csproj",
+      "projectUniqueName": "C:\\Users\\USER\\source\\repos\\01-ODONTO-BACKEND\\OdontoBackend.Aplicacion\\OdontoBackend.Aplicacion.csproj",
       "projectName": "OdontoBackend.Aplicacion",
-      "projectPath": "C:\\Users\\USER\\Source\\Repos\\01-ODONTO-BACKEND\\OdontoBackend.Aplicacion\\OdontoBackend.Aplicacion.csproj",
+      "projectPath": "C:\\Users\\USER\\source\\repos\\01-ODONTO-BACKEND\\OdontoBackend.Aplicacion\\OdontoBackend.Aplicacion.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER\\Source\\Repos\\01-ODONTO-BACKEND\\OdontoBackend.Aplicacion\\obj\\",
+      "outputPath": "C:\\Users\\USER\\source\\repos\\01-ODONTO-BACKEND\\OdontoBackend.Aplicacion\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
@@ -835,11 +835,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\USER\\Source\\Repos\\01-ODONTO-BACKEND\\OdontoBackend.Aplication.Entities\\OdontoBackend.Aplication.Entities.csproj": {
-              "projectPath": "C:\\Users\\USER\\Source\\Repos\\01-ODONTO-BACKEND\\OdontoBackend.Aplication.Entities\\OdontoBackend.Aplication.Entities.csproj"
+            "C:\\Users\\USER\\source\\repos\\01-ODONTO-BACKEND\\OdontoBackend.Aplication.Entities\\OdontoBackend.Aplication.Entities.csproj": {
+              "projectPath": "C:\\Users\\USER\\source\\repos\\01-ODONTO-BACKEND\\OdontoBackend.Aplication.Entities\\OdontoBackend.Aplication.Entities.csproj"
             },
-            "C:\\Users\\USER\\Source\\Repos\\01-ODONTO-BACKEND\\OdontoBackend.Domain\\OdontoBackend.Domain.csproj": {
-              "projectPath": "C:\\Users\\USER\\Source\\Repos\\01-ODONTO-BACKEND\\OdontoBackend.Domain\\OdontoBackend.Domain.csproj"
+            "C:\\Users\\USER\\source\\repos\\01-ODONTO-BACKEND\\OdontoBackend.Domain\\OdontoBackend.Domain.csproj": {
+              "projectPath": "C:\\Users\\USER\\source\\repos\\01-ODONTO-BACKEND\\OdontoBackend.Domain\\OdontoBackend.Domain.csproj"
             }
           }
         }

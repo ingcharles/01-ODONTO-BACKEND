@@ -1090,11 +1090,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USER\\Source\\Repos\\01-ODONTO-BACKEND\\OdontoBackend.CrossCutting.IoC\\OdontoBackend.CrossCutting.IoC.csproj",
+      "projectUniqueName": "C:\\Users\\USER\\source\\repos\\01-ODONTO-BACKEND\\OdontoBackend.CrossCutting.IoC\\OdontoBackend.CrossCutting.IoC.csproj",
       "projectName": "OdontoBackend.CrossCutting.IoC",
-      "projectPath": "C:\\Users\\USER\\Source\\Repos\\01-ODONTO-BACKEND\\OdontoBackend.CrossCutting.IoC\\OdontoBackend.CrossCutting.IoC.csproj",
+      "projectPath": "C:\\Users\\USER\\source\\repos\\01-ODONTO-BACKEND\\OdontoBackend.CrossCutting.IoC\\OdontoBackend.CrossCutting.IoC.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER\\Source\\Repos\\01-ODONTO-BACKEND\\OdontoBackend.CrossCutting.IoC\\obj\\",
+      "outputPath": "C:\\Users\\USER\\source\\repos\\01-ODONTO-BACKEND\\OdontoBackend.CrossCutting.IoC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
@@ -1116,14 +1116,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\USER\\Source\\Repos\\01-ODONTO-BACKEND\\OdontoBackend.Aplicacion\\OdontoBackend.Aplicacion.csproj": {
-              "projectPath": "C:\\Users\\USER\\Source\\Repos\\01-ODONTO-BACKEND\\OdontoBackend.Aplicacion\\OdontoBackend.Aplicacion.csproj"
+            "C:\\Users\\USER\\source\\repos\\01-ODONTO-BACKEND\\OdontoBackend.Aplicacion\\OdontoBackend.Aplicacion.csproj": {
+              "projectPath": "C:\\Users\\USER\\source\\repos\\01-ODONTO-BACKEND\\OdontoBackend.Aplicacion\\OdontoBackend.Aplicacion.csproj"
             },
-            "C:\\Users\\USER\\Source\\Repos\\01-ODONTO-BACKEND\\OdontoBackend.Infrastructure.Contracts\\OdontoBackend.Infrastructure.Contracts.csproj": {
-              "projectPath": "C:\\Users\\USER\\Source\\Repos\\01-ODONTO-BACKEND\\OdontoBackend.Infrastructure.Contracts\\OdontoBackend.Infrastructure.Contracts.csproj"
+            "C:\\Users\\USER\\source\\repos\\01-ODONTO-BACKEND\\OdontoBackend.Infrastructure.Contracts\\OdontoBackend.Infrastructure.Contracts.csproj": {
+              "projectPath": "C:\\Users\\USER\\source\\repos\\01-ODONTO-BACKEND\\OdontoBackend.Infrastructure.Contracts\\OdontoBackend.Infrastructure.Contracts.csproj"
             },
-            "C:\\Users\\USER\\Source\\Repos\\01-ODONTO-BACKEND\\OdontoBackend.Infrastructure\\OdontoBackend.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\USER\\Source\\Repos\\01-ODONTO-BACKEND\\OdontoBackend.Infrastructure\\OdontoBackend.Infrastructure.csproj"
+            "C:\\Users\\USER\\source\\repos\\01-ODONTO-BACKEND\\OdontoBackend.Infrastructure\\OdontoBackend.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\USER\\source\\repos\\01-ODONTO-BACKEND\\OdontoBackend.Infrastructure\\OdontoBackend.Infrastructure.csproj"
             }
           }
         }
