@@ -128,6 +128,13 @@ Information: 23:46:19 - 14 - Now listening on: http://localhost:5187
 Information: 23:46:19 - 0 - Application started. Press Ctrl+C to shut down.
 Information: 23:46:19 - 0 - Hosting environment: Development
 Information: 23:46:19 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+<<<<<<< HEAD
+Information: 23:48:52 - 14 - Now listening on: https://localhost:7288
+Information: 23:48:52 - 14 - Now listening on: http://localhost:5187
+Information: 23:48:52 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 23:48:52 - 0 - Hosting environment: Development
+Information: 23:48:52 - 0 - Content root path: C:\Users\CARLOS\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+=======
 Information: 16:18:09 - 14 - Now listening on: https://localhost:7288
 Information: 16:18:09 - 14 - Now listening on: http://localhost:5187
 Information: 16:18:09 - 0 - Application started. Press Ctrl+C to shut down.
@@ -183,3 +190,4 @@ Information: 16:40:56 - 14 - Now listening on: http://localhost:5187
 Information: 16:40:56 - 0 - Application started. Press Ctrl+C to shut down.
 Information: 16:40:56 - 0 - Hosting environment: Development
 Information: 16:40:56 - 0 - Content root path: C:\Users\USER\Source\Repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+>>>>>>> a66a941f9a5550869947affcbc4b9fcde19d74db

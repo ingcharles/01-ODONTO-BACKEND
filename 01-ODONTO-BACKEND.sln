@@ -15,21 +15,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5-CrossCutting", "5-CrossCu
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6-Common", "6-Common", "{91178F90-54CD-4D01-8350-EE9E2BDD8C8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdontoBackend.Aplicacion", "OdontoBackend.Aplicacion\OdontoBackend.Aplicacion.csproj", "{80F77C1B-0077-45A7-A4FD-EA5F897CA69A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdontoBackend.Aplicacion", "OdontoBackend.Aplicacion\OdontoBackend.Aplicacion.csproj", "{80F77C1B-0077-45A7-A4FD-EA5F897CA69A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdontoBackend.Aplication.Entities", "OdontoBackend.Aplication.Entities\OdontoBackend.Aplication.Entities.csproj", "{7FED9170-CE35-499D-B7D9-61D3CFDDB272}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdontoBackend.Aplication.Entities", "OdontoBackend.Aplication.Entities\OdontoBackend.Aplication.Entities.csproj", "{7FED9170-CE35-499D-B7D9-61D3CFDDB272}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdontoBackend.Domain", "OdontoBackend.Domain\OdontoBackend.Domain.csproj", "{80E79080-EAA9-4FFC-8C66-BA3CEC5E712A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdontoBackend.Domain", "OdontoBackend.Domain\OdontoBackend.Domain.csproj", "{80E79080-EAA9-4FFC-8C66-BA3CEC5E712A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdontoBackend.Infrastructure", "OdontoBackend.Infrastructure\OdontoBackend.Infrastructure.csproj", "{6FB2E3B3-49E3-4126-A583-1BA11579D0A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdontoBackend.Infrastructure", "OdontoBackend.Infrastructure\OdontoBackend.Infrastructure.csproj", "{6FB2E3B3-49E3-4126-A583-1BA11579D0A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdontoBackend.Infrastructure.Contracts", "OdontoBackend.Infrastructure.Contracts\OdontoBackend.Infrastructure.Contracts.csproj", "{FECB9662-2B18-4516-863C-B78A541D05C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdontoBackend.Infrastructure.Contracts", "OdontoBackend.Infrastructure.Contracts\OdontoBackend.Infrastructure.Contracts.csproj", "{FECB9662-2B18-4516-863C-B78A541D05C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdontoBackend.CrossCutting.IoC", "OdontoBackend.CrossCutting.IoC\OdontoBackend.CrossCutting.IoC.csproj", "{E73399F4-5659-4813-8EC5-4DD3A4AC93AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdontoBackend.CrossCutting.IoC", "OdontoBackend.CrossCutting.IoC\OdontoBackend.CrossCutting.IoC.csproj", "{E73399F4-5659-4813-8EC5-4DD3A4AC93AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdontoBackend.Common.Logs", "OdontoBackend.Common.Logs\OdontoBackend.Common.Logs.csproj", "{A8609540-C86F-4189-820A-07CAD6757D2B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdontoBackend.Common.Logs", "OdontoBackend.Common.Logs\OdontoBackend.Common.Logs.csproj", "{A8609540-C86F-4189-820A-07CAD6757D2B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdontoBackend.Services.Api", "OdontoBackend.Services.Api\OdontoBackend.Services.Api.csproj", "{4E71A2C2-14B4-4839-8BC5-1A0A83F1DBB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdontoBackend.Services.Api", "OdontoBackend.Services.Api\OdontoBackend.Services.Api.csproj", "{4E71A2C2-14B4-4839-8BC5-1A0A83F1DBB1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

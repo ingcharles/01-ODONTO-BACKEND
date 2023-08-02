@@ -1,6 +1,6 @@
 ﻿using OdontoBackend.Aplicacion.ViewModels;
 using OdontoBackend.Aplication.Entities.Commands;
-using OdontoBackend.Aplication.Entities.Queries;
+using OdontoBackend.Aplication.Entities.Queries.User;
 using OdontoBackend.Domain.Models;
 using System;
 using System.Collections.Generic;
@@ -15,5 +15,10 @@ namespace OdontoBackend.Aplicacion.Services.Contracts
         Task<IQueryable<UserViewModel>> GetUserByCiPas(Task<UserByCiPasQuery> request);
 
         Task<IQueryable<UserViewModel>> SaveRegisterUser(Task<UserCommand> request);
+
+        Task<IQueryable<UserViewModel>> GetUserByCod(Task<UserByCodQuery> request);
+
+        Task<IQueryable<User>> UpdateTokensCodUsuario(Task<UserViewModel> request);
+
     }
 }

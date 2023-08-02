@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 using OdontoBackend.Aplication.Entities.Commands;
-using OdontoBackend.Aplication.Entities.Queries;
+using OdontoBackend.Aplication.Entities.Queries.User;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +11,7 @@ namespace OdontoBackend.Aplication.Entities.Validators
 {
     public class UserQueryValidator : AbstractValidator<UserByCiPasQuery>
     {
+
         public UserQueryValidator()
         {
 

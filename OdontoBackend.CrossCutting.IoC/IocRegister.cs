@@ -1,8 +1,10 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
 using OdontoBackend.Aplicacion.Mappers;
 using OdontoBackend.Aplicacion.Mappers.Contracts;
 using OdontoBackend.Aplicacion.Services;
 using OdontoBackend.Aplicacion.Services.Contracts;
+
 using OdontoBackend.Domain.Contracts;
 using OdontoBackend.Infrastructure.Context;
 using OdontoBackend.Infrastructure.Contracts.Context;
@@ -36,6 +38,10 @@ namespace OdontoBackend.CrossCutting.IoC
             services.AddScoped<IUserMapper, UserMapper>();
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IMailService, MailService>();
+                services.AddScoped<ITokenService, TokenService>();
+          
+
+            //services.AddScoped<IHttpClientFactory>();
 
             #endregion
 

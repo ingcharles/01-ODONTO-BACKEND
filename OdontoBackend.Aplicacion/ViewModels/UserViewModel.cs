@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OdontoBackend.Aplicacion.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -11,7 +12,10 @@ namespace OdontoBackend.Aplicacion.ViewModels
     {
         [DisplayName("Código usuario")]
         public Int64? codigoUsuario { get; set; } = default!;
-
+        [DisplayName("Código usuario")]
+        public String? nombreUsuario { get; set; } = default!;
         public String? mensajeLogica { get; set; } = default!;
+
+        public List<RefreshToken> refreshTokens { get; set; } = default!;
     }
 }

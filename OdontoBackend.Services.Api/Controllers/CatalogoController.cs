@@ -13,7 +13,7 @@ namespace OdontoBackend.Services.Api.Controllers
     {
 
         private readonly ICatalogoService _serviceCatalogo;
-        CatalogoCommandValidator? _validatorCatalogo;
+        //CatalogoCommandValidator? _validatorCatalogo;
         //CatalogoQueryValidator? _validatorQueryCatalogo;
         public CatalogoController(ICatalogoService serviceCatalogo)
         {

@@ -1,7 +1,7 @@
 ﻿using OdontoBackend.Aplicacion.Mappers.Contracts;
 using OdontoBackend.Aplicacion.ViewModels;
 using OdontoBackend.Aplication.Entities.Commands;
-using OdontoBackend.Aplication.Entities.Queries;
+using OdontoBackend.Aplication.Entities.Queries.User;
 using OdontoBackend.Domain.Models;
 using System;
 using System.Collections.Generic;
@@ -31,6 +31,7 @@ namespace OdontoBackend.Aplicacion.Mappers
                 new UserViewModel
                 {
                     codigoUsuario = source.Result.cod_usuario,
+                    nombreUsuario = source.Result.nom_usuario,
                     mensajeLogica = source.Result.mensaje_logica
 
 
@@ -51,9 +52,9 @@ namespace OdontoBackend.Aplicacion.Mappers
                     lic_agr_usuario = source.Result.licenseAgreement,
                     is_pro_usuario = source.Result.isProfesional,
                     is_cli_usuario = source.Result.isClinic,
-       
-                    
-    }
+
+
+                }
             }.AsQueryable();
         }
         public IQueryable<UserViewModel> UserCommandFromRegisterUser(Task<UserCommandFrom> source)
@@ -63,6 +64,60 @@ namespace OdontoBackend.Aplicacion.Mappers
                 new UserViewModel
                 {
                     codigoUsuario = source.Result.cod_usuario,
+                    mensajeLogica = source.Result.mensaje_logica
+
+
+                }
+            }.AsQueryable();
+        }
+
+        public IQueryable<User> UserCommandToUpdateTokens(Task<UserViewModel> source)
+        {
+            return new List<User>
+            {
+                new User
+                {
+                    cod_usuario = source.Result.codigoUsuario,
+                    refresh_tokens = source.Result.refreshTokens,
+
+
+
+                }
+            }.AsQueryable();
+        }
+        public IQueryable<User> UserCommandFromUpdateTokens(Task<User> source)
+        {
+            return new List<User>
+            {
+                new User
+                {
+                    cod_usuario = source.Result.cod_usuario,
+                    mensaje_logica = source.Result.mensaje_logica
+
+
+                }
+            }.AsQueryable();
+        }
+
+        public IQueryable<User> UserQueryToUserByCod(Task<UserByCodQuery> source)
+        {
+            return new List<User>
+            {
+                new User
+                {
+                    cod_usuario = source.Result.codigoUsuario,
+                }
+            }.AsQueryable();
+        }
+        public IQueryable<UserViewModel> UserQueryFromUserByCod(Task<User> source)
+        {
+            return new List<UserViewModel>
+            {
+                new UserViewModel
+                {
+                    codigoUsuario = source.Result.cod_usuario,
+                    nombreUsuario = source.Result.nom_usuario,
+                    refreshTokens = source.Result.refresh_tokens,
                     mensajeLogica = source.Result.mensaje_logica
 
 
