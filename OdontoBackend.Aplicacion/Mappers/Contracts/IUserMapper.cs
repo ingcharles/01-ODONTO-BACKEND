@@ -1,7 +1,8 @@
-﻿using OdontoBackend.Aplicacion.ViewModels;
+﻿using OdontoBackend.Aplicacion.ViewModels.User;
 using OdontoBackend.Aplication.Entities.Commands;
 using OdontoBackend.Aplication.Entities.Queries.User;
 using OdontoBackend.Domain.Models;
+using OdontoBackend.Domain.Models.User;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,7 @@ namespace OdontoBackend.Aplicacion.Mappers.Contracts
     {
         public IQueryable<User> UserQueryToUserByCiPas(Task<UserByCiPasQuery> source);
         public IQueryable<UserViewModel> UserQueryFromUserByCiPas(Task<User> source);
+        public IQueryable<AplicacionViewModel> AplicacionQueryFromAplicacionByCodUser(Task<List<OdontoBackend.Domain.Models.User.Aplicacion>> source);
         public IQueryable<User> UserCommandToRegisterUser(Task<UserCommand> source);
 
         public IQueryable<UserViewModel> UserCommandFromRegisterUser(Task<UserCommandFrom> source);

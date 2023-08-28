@@ -4,6 +4,7 @@ using NpgsqlTypes;
 using OdontoBackend.Aplicacion.Entities;
 using OdontoBackend.Domain.Contracts;
 using OdontoBackend.Domain.Models;
+using OdontoBackend.Domain.Models.User;
 using OdontoBackend.Infrastructure.Context;
 using OdontoBackend.Infrastructure.Contracts.Context;
 using OdontoBackend.Infrastructure.Contracts.Entities;
@@ -343,6 +344,63 @@ namespace OdontoBackend.Infrastructure.Repository
         //        }
         //    }
         //}
+
+
+        public Task<IQueryable<OdontoBackend.Domain.Models.User.Aplicacion>> GetAplicacionByCodUser(User request)
+        {
+
+            using (var scope = new TransactionScope())
+            {
+                using (var connection = _context.GetConnection())
+                {
+                    int response = 0;
+                    using (NpgsqlCommand cmd = connection.CreateCommand())
+                    {
+                        cmd.CommandText = UtilsContextDatabase.ToDescriptionString(Packages.pkg.esq_usuarios) + "get_aplicacion_by_cod_user";
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.Add("i_cod_usuario", NpgsqlDbType.Bigint).Value = request.cod_usuario;
+                        cmd.Parameters.Add(new NpgsqlParameter("o_cursor", NpgsqlDbType.Refcursor) { Direction = ParameterDirection.InputOutput, Value = "o_cursor_one" });
+                        response = cmd.ExecuteNonQuery();
+                    }
+                    var result = Enumerable.Empty<OdontoBackend.Domain.Models.User.Aplicacion>().AsQueryable();
+                    OdontoBackend.Domain.Models.User.Aplicacion resultResponse = new OdontoBackend.Domain.Models.User.Aplicacion();
+                    using (NpgsqlCommand cmd1 = connection.CreateCommand())
+                    {
+                        //cmd.CommandText = "fetch all in \"<unnamed portal 1>\"";
+                        cmd1.CommandText = "fetch all in \"o_cursor_one\"";
+                        cmd1.CommandType = CommandType.Text;
+
+                        result = _context.ExecuteList<OdontoBackend.Domain.Models.User.Aplicacion>(cmd1, ref error);
+                        scope.Complete();
+
+                        if (error?.Length > 0)
+                        {
+                            resultResponse.mensaje_logica = error;
+                            result = result!.Append(resultResponse);
+                        }
+                        //else
+                        //  tasks.cod_usuario = codigoUsuario;
+
+                        //response = response == null ? response!.Append(tasks) : default!;
+                        //response = _context.ExecuteListWithOneClass<User>(cmd1, ref error, new List<RefreshToken>());
+                        //scope.Complete();
+
+                        //if (error?.Length > 0)
+                        //{
+                        //    request.mensaje_logica = "Usuario no encontrado";
+                        //}
+                        //result = result is null ? result!.Append(resultResponse) : result;
+                    }
+                    return Task.FromResult(result);
+                    
+                    
+
+
+                }
+
+            }
+
+        }
     }
 }
 

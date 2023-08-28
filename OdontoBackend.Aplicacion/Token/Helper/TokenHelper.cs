@@ -1,5 +1,5 @@
 ﻿using Microsoft.IdentityModel.Tokens;
-using OdontoBackend.Aplicacion.ViewModels;
+using OdontoBackend.Aplicacion.ViewModels.User;
 using OdontoBackend.Domain.Models;
 using System.Diagnostics;
 using System.IdentityModel.Tokens.Jwt;

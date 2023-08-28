@@ -1,5 +1,4 @@
-﻿
-using OdontoBackend.Domain.Models;
+﻿using OdontoBackend.Domain.Models.User;
 
 namespace OdontoBackend.Aplicacion.Entities
 {
