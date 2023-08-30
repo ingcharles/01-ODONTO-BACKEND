@@ -1,10 +1,10 @@
 ﻿using OdontoBackend.Aplicacion.Mappers.Contracts;
 using OdontoBackend.Aplicacion.Services.Contracts;
-using OdontoBackend.Aplicacion.ViewModels;
+using OdontoBackend.Aplicacion.ViewModels.User;
 using OdontoBackend.Aplication.Entities.Commands;
 using OdontoBackend.Aplication.Entities.Queries.User;
 using OdontoBackend.Domain.Contracts;
-using OdontoBackend.Domain.Models;
+using OdontoBackend.Domain.Models.User;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -38,6 +38,15 @@ namespace OdontoBackend.Aplicacion.Services
             var _result = _response.Result?.Count() > 0 ? _mapper.UserQueryFromUserByCiPas(Task.FromResult(_response.Result.FirstOrDefault()!)) : default!;
             return Task.FromResult(_result);
         }
+        //Obtiene todas las aplicaciones por codigo de usuario
+        public Task<IQueryable<AplicacionViewModel>> GetAplicacionByCodUser(Task<UserByCodQuery> request)
+        {
+            var _request = _mapper.UserQueryToUserByCod(request);
+            var _response = _repository.GetAplicacionByCodUser(_request.FirstOrDefault()!);
+            var _result = _response.Result?.Count() > 0 ? _mapper.AplicacionQueryFromAplicacionByCodUser(Task.FromResult(_response.Result.ToList())) : default!;
+            return Task.FromResult(_result);
+        }
+
         public Task<IQueryable<UserViewModel>> SaveRegisterUser(Task<UserCommand> request)
         {
             var _request = _mapper.UserCommandToRegisterUser(request);

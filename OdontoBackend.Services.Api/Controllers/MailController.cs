@@ -46,6 +46,7 @@ namespace OdontoBackend.Services.Api.Controllers
         //        return StatusCode(StatusCodes.Status500InternalServerError, "An error occured. The Mail could not be sent.");
         //    }
         //}
+
         [HttpPost]
         [Route("SendMailWithAttachmentAsync")]
         public async Task<IActionResult> SendMailWithAttachmentAsync([FromForm] MailDataWithAttachments mailData)

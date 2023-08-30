@@ -4,7 +4,7 @@ using OdontoBackend.Aplicacion.Entities;
 using OdontoBackend.Aplicacion.Services.Contracts;
 
 using OdontoBackend.Aplicacion.Token.Helper;
-using OdontoBackend.Aplicacion.ViewModels;
+using OdontoBackend.Aplicacion.ViewModels.User;
 using OdontoBackend.Aplication.Entities.Commands;
 using OdontoBackend.Aplication.Entities.Queries;
 using OdontoBackend.Aplication.Entities.Queries.User;

@@ -1,4 +1,4 @@
-﻿using OdontoBackend.Aplicacion.ViewModels;
+﻿using OdontoBackend.Aplicacion.ViewModels.User;
 using OdontoBackend.Aplication.Entities.Commands;
 using OdontoBackend.Domain.Models;
 using System;

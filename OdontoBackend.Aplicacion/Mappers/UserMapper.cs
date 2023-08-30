@@ -1,8 +1,9 @@
 ﻿using OdontoBackend.Aplicacion.Mappers.Contracts;
-using OdontoBackend.Aplicacion.ViewModels;
+using OdontoBackend.Aplicacion.ViewModels.User;
 using OdontoBackend.Aplication.Entities.Commands;
 using OdontoBackend.Aplication.Entities.Queries.User;
 using OdontoBackend.Domain.Models;
+using OdontoBackend.Domain.Models.User;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,6 +38,30 @@ namespace OdontoBackend.Aplicacion.Mappers
 
                 }
             }.AsQueryable();
+        }
+
+        public IQueryable<AplicacionViewModel> AplicacionQueryFromAplicacionByCodUser(Task<List<OdontoBackend.Domain.Models.User.Aplicacion>> source)
+        {
+            var aplicacionList = source.Result;
+            var aplicacion = new List<AplicacionViewModel>();
+            foreach (var item in aplicacionList)
+            {
+                aplicacion.Add(new AplicacionViewModel
+                {
+                    codigo = item.cod_aplicacion,
+                    nombre = item.nom_aplicacion,
+                    descripcion = item.des_aplicacion,
+                    icono = item.ico_aplicacion,
+                    color = item.col_aplicacion,
+                    nemonico = item.nmo_aplicacion,
+                    estado = item.est_aplicacion,
+                    mensajeLogica = item.mensaje_logica
+
+                });
+            }
+            return aplicacion.AsQueryable();
+
+            
         }
         public IQueryable<User> UserCommandToRegisterUser(Task<UserCommand> source)
         {

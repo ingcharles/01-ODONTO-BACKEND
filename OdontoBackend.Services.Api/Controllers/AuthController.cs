@@ -12,6 +12,7 @@ using OdontoBackend.Domain.Contracts;
 using OdontoBackend.Aplicacion.ViewModels;
 using OdontoBackend.Aplication.Entities.Queries.User;
 using Newtonsoft.Json.Linq;
+using OdontoBackend.Aplicacion.ViewModels.User;
 
 namespace OdontoBackend.Services.Api.Controllers
 {
@@ -52,7 +53,6 @@ namespace OdontoBackend.Services.Api.Controllers
                 var user = new UserViewModel();
                 user.codigoUsuario = response.FirstOrDefault()?.codigoUsuario;
                 user.nombreUsuario = response.FirstOrDefault()?.nombreUsuario;
-                //user.refreshTokens = response.FirstOrDefault()?.refreshTokens;
                 var token = await  _tokenService.GenerateTokensAsync(user);
                 var reponseToken = new TokenResponseViewModel();
                 if (token!=null)
@@ -144,6 +144,39 @@ namespace OdontoBackend.Services.Api.Controllers
             {
              
                 return Ok(new { data = response.FirstOrDefault()?.codigoUsuario, message = Messages._201Find, statusCode = StatusCodes.Status200OK, ok = true });
+            }
+            else
+            {
+                return Ok(new { message = response.FirstOrDefault()?.mensajeLogica, statusCode = StatusCodes.Status404NotFound, ok = false });
+            }
+        }
+
+
+
+        [HttpPost]
+        [Route("GetAplicacionByCodUser")]
+        [Produces("Application/Json", Type = typeof(object))]//UserViewModel
+        [SwaggerOperation(Summary = "Obtener información del login de un usuario")]
+        public async Task<IActionResult> GetAplicacionByCodUser([FromBody] UserByCodQuery request)
+        {
+            if (!ModelState.IsValid) return StatusCode(StatusCodes.Status400BadRequest, ModelState);
+            var response = await _serviceUser.GetAplicacionByCodUser(Task.FromResult(request));
+            if (response.Count(x => x.mensajeLogica == null) > 0)
+            {
+                //var user = new UserViewModel();
+                //user.codigoUsuario = response.FirstOrDefault()?.codigoUsuario;
+                //user.nombreUsuario = response.FirstOrDefault()?.nombreUsuario;
+                //var token = await _tokenService.GenerateTokensAsync(user);
+                //var reponseToken = new TokenResponseViewModel();
+                //if (token != null)
+                //    reponseToken = new TokenResponseViewModel
+                //    {
+                //        accessToken = token.Item1,
+                //        refreshToken = token.Item2
+                //    };
+
+
+                return Ok(new { data = response, message = Messages._201Find, statusCode = StatusCodes.Status200OK, ok = true });
             }
             else
             {
