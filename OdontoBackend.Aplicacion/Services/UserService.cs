@@ -74,6 +74,14 @@ namespace OdontoBackend.Aplicacion.Services
 
         }
 
-      
+        public Task<IQueryable<MenuViewModel>> GetMenuByCodAplicacion(Task<MenuByCodAplicacionQuery> request)
+        {
+            var _request = _mapper.MenuQueryToMenuByCodAplicacion(request);
+            var _response = _repository.GetMenuByCodAplicacion(_request.FirstOrDefault()!);
+            var _result = _response.Result?.Count() > 0 ? _mapper.MenuQueryFromMenuByCodAplicacion(Task.FromResult(_response.Result.ToList())) : default!;
+            return Task.FromResult(_result);
+        }
+
+
     }
 }

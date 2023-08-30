@@ -163,19 +163,25 @@ namespace OdontoBackend.Services.Api.Controllers
             var response = await _serviceUser.GetAplicacionByCodUser(Task.FromResult(request));
             if (response.Count(x => x.mensajeLogica == null) > 0)
             {
-                //var user = new UserViewModel();
-                //user.codigoUsuario = response.FirstOrDefault()?.codigoUsuario;
-                //user.nombreUsuario = response.FirstOrDefault()?.nombreUsuario;
-                //var token = await _tokenService.GenerateTokensAsync(user);
-                //var reponseToken = new TokenResponseViewModel();
-                //if (token != null)
-                //    reponseToken = new TokenResponseViewModel
-                //    {
-                //        accessToken = token.Item1,
-                //        refreshToken = token.Item2
-                //    };
+                return Ok(new { data = response, message = Messages._201Find, statusCode = StatusCodes.Status200OK, ok = true });
+            }
+            else
+            {
+                return Ok(new { message = response.FirstOrDefault()?.mensajeLogica, statusCode = StatusCodes.Status404NotFound, ok = false });
+            }
+        }
 
 
+        [HttpPost]
+        [Route("GetMenuByCodAplicacion")]
+        [Produces("Application/Json", Type = typeof(object))]//UserViewModel
+        [SwaggerOperation(Summary = "Obtener información del menú por aplicación y usuario")]
+        public async Task<IActionResult> GetMenuByCodAplicacion([FromBody] MenuByCodAplicacionQuery request)
+        {
+            if (!ModelState.IsValid) return StatusCode(StatusCodes.Status400BadRequest, ModelState);
+            var response = await _serviceUser.GetMenuByCodAplicacion(Task.FromResult(request));
+            if (response.Count(x => x.mensajeLogica == null) > 0)
+            {
                 return Ok(new { data = response, message = Messages._201Find, statusCode = StatusCodes.Status200OK, ok = true });
             }
             else

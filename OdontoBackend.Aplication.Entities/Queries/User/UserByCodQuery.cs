@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace OdontoBackend.Aplication.Entities.Queries.User
 {
-    public class UserByCodQuery
+    public class MenuByCodAplicacionQuery
     {
         public string auditoria { get; set; } = default!;
 
         public long? codigoUsuario { get; set; } = default!;
-
+        public long? codigoAplicacion { get; set; } = default!;
 
     }
 }

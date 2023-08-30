@@ -1,0 +1,64 @@
+Information: 09:31:36 - 14 - Now listening on: https://localhost:7288
+Information: 09:31:36 - 14 - Now listening on: http://localhost:5187
+Information: 09:31:36 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 09:31:36 - 0 - Hosting environment: Development
+Information: 09:31:36 - 0 - Content root path: C:\Users\USER\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 09:32:32 - 14 - Now listening on: https://localhost:7288
+Information: 09:32:32 - 14 - Now listening on: http://localhost:5187
+Information: 09:32:32 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 09:32:32 - 0 - Hosting environment: Development
+Information: 09:32:32 - 0 - Content root path: C:\Users\USER\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Information: 10:52:17 - 14 - Now listening on: https://localhost:7288
+Information: 10:52:17 - 14 - Now listening on: http://localhost:5187
+Information: 10:52:17 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 10:52:17 - 0 - Hosting environment: Development
+Information: 10:52:17 - 0 - Content root path: C:\Users\USER\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api
+Error: 14:27:39 - 0 - System.InvalidCastException: Parameter i_cod_usuario must be set
+   at Npgsql.NpgsqlParameter.ValidateAndGetLength()
+   at Npgsql.NpgsqlParameterCollection.ProcessParameters(TypeMapper typeMapper, Boolean validateValues, CommandType commandType)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at OdontoBackend.Infrastructure.Repository.AuthRepository.GetMenuByCodAplicacion(Menu request) in C:\Users\USER\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Repository\AuthRepository.cs:line 402
+   at OdontoBackend.Aplicacion.Services.UserService.GetMenuByCodAplicacion(Task`1 request) in C:\Users\USER\source\repos\01-ODONTO-BACKEND\OdontoBackend.Aplicacion\Services\UserService.cs:line 80
+   at OdontoBackend.Services.Api.Controllers.AuthController.GetMenuByCodAplicacion(MenuByCodAplicacionQuery request) in C:\Users\USER\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\Controllers\AuthController.cs:line 182
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at OdontoBackend.Common.Logs.ExceptionHandler.Invoke(HttpContext context) in C:\Users\USER\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\ExceptionHandler.cs:line 32
+Error: 14:27:44 - 0 - System.InvalidCastException: Parameter i_cod_usuario must be set
+   at Npgsql.NpgsqlParameter.ValidateAndGetLength()
+   at Npgsql.NpgsqlParameterCollection.ProcessParameters(TypeMapper typeMapper, Boolean validateValues, CommandType commandType)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at OdontoBackend.Infrastructure.Repository.AuthRepository.GetMenuByCodAplicacion(Menu request) in C:\Users\USER\source\repos\01-ODONTO-BACKEND\OdontoBackend.Infrastructure\Repository\AuthRepository.cs:line 402
+   at OdontoBackend.Aplicacion.Services.UserService.GetMenuByCodAplicacion(Task`1 request) in C:\Users\USER\source\repos\01-ODONTO-BACKEND\OdontoBackend.Aplicacion\Services\UserService.cs:line 80
+   at OdontoBackend.Services.Api.Controllers.AuthController.GetMenuByCodAplicacion(MenuByCodAplicacionQuery request) in C:\Users\USER\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api\Controllers\AuthController.cs:line 182
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at OdontoBackend.Common.Logs.ExceptionHandler.Invoke(HttpContext context) in C:\Users\USER\source\repos\01-ODONTO-BACKEND\OdontoBackend.Common.Logs\ExceptionHandler.cs:line 32
+Information: 15:30:26 - 14 - Now listening on: https://localhost:7288
+Information: 15:30:26 - 14 - Now listening on: http://localhost:5187
+Information: 15:30:26 - 0 - Application started. Press Ctrl+C to shut down.
+Information: 15:30:26 - 0 - Hosting environment: Development
+Information: 15:30:26 - 0 - Content root path: C:\Users\USER\source\repos\01-ODONTO-BACKEND\OdontoBackend.Services.Api

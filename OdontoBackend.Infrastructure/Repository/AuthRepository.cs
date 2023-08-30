@@ -97,7 +97,7 @@ namespace OdontoBackend.Infrastructure.Repository
             {
                 using (var connection = _context.GetConnection())
                 {
-                   
+
                     var result = Enumerable.Empty<UserCommandFrom>().AsQueryable();
                     UserCommandFrom resultResponse = new UserCommandFrom();
                     using (NpgsqlCommand cmd = connection.CreateCommand())
@@ -123,7 +123,7 @@ namespace OdontoBackend.Infrastructure.Repository
                         scope.Complete();
                         connection.Close();
                         error = (string)cmd.Parameters["o_error"].Value!;
-                   //: "";
+                        //: "";
                         if (error?.Length > 0)
                         {
                             resultResponse.mensaje_logica = error;
@@ -155,7 +155,7 @@ namespace OdontoBackend.Infrastructure.Repository
 
                         //response = response == null ? response!.Append(tasks) : default!;
                     }
-                    
+
                     return Task.FromResult(result);
                 }
             }
@@ -179,7 +179,7 @@ namespace OdontoBackend.Infrastructure.Repository
                         cmd.Parameters.Add("i_cod_usuario", NpgsqlDbType.Bigint).Value = request.cod_usuario;
                         var jsonString = JsonConvert.SerializeObject(request.refresh_tokens);
                         cmd.Parameters.Add("i_ref_token_usuario", NpgsqlDbType.Jsonb).Value = jsonString;
- 
+
                         cmd.Parameters.Add(new NpgsqlParameter("o_cod_usuario", NpgsqlDbType.Bigint) { Direction = ParameterDirection.InputOutput, Value = 0 });
                         //cmd.Parameters.Add(new NpgsqlParameter("o_nom_usuario", NpgsqlDbType.Bigint) { Direction = ParameterDirection.InputOutput, Value = 0 });
                         cmd.Parameters.Add(new NpgsqlParameter("o_error", NpgsqlDbType.Varchar) { Direction = ParameterDirection.InputOutput, Value = "" });
@@ -195,11 +195,11 @@ namespace OdontoBackend.Infrastructure.Repository
                         else
                         {
                             resultResponse.cod_usuario = (Int64)cmd.Parameters["o_cod_usuario"].Value!;
-                           // resultResponse.nom_usuario = (string)cmd.Parameters["o_nom_usuario"].Value!;
+                            // resultResponse.nom_usuario = (string)cmd.Parameters["o_nom_usuario"].Value!;
                         }
 
                         result = response == -1 ? result.Append(resultResponse) : default!;
-    
+
                     }
 
                     return Task.FromResult(result);
@@ -275,7 +275,7 @@ namespace OdontoBackend.Infrastructure.Repository
 
                         var response = _context.ExecuteListWithOneClass<User>(cmd1, ref error, new List<RefreshToken>());
                         scope.Complete();
-  
+
                         if (error?.Length > 0)
                         {
                             resultResponse.mensaje_logica = "Usuario no encontrado";
@@ -366,7 +366,6 @@ namespace OdontoBackend.Infrastructure.Repository
                     OdontoBackend.Domain.Models.User.Aplicacion resultResponse = new OdontoBackend.Domain.Models.User.Aplicacion();
                     using (NpgsqlCommand cmd1 = connection.CreateCommand())
                     {
-                        //cmd.CommandText = "fetch all in \"<unnamed portal 1>\"";
                         cmd1.CommandText = "fetch all in \"o_cursor_one\"";
                         cmd1.CommandType = CommandType.Text;
 
@@ -378,26 +377,48 @@ namespace OdontoBackend.Infrastructure.Repository
                             resultResponse.mensaje_logica = error;
                             result = result!.Append(resultResponse);
                         }
-                        //else
-                        //  tasks.cod_usuario = codigoUsuario;
-
-                        //response = response == null ? response!.Append(tasks) : default!;
-                        //response = _context.ExecuteListWithOneClass<User>(cmd1, ref error, new List<RefreshToken>());
-                        //scope.Complete();
-
-                        //if (error?.Length > 0)
-                        //{
-                        //    request.mensaje_logica = "Usuario no encontrado";
-                        //}
-                        //result = result is null ? result!.Append(resultResponse) : result;
                     }
                     return Task.FromResult(result);
-                    
-                    
-
-
                 }
+            }
+        }
 
+        public Task<IQueryable<Menu>> GetMenuByCodAplicacion(Menu request)
+        {
+
+            using (var scope = new TransactionScope())
+            {
+                using (var connection = _context.GetConnection())
+                {
+                    int response = 0;
+                    using (NpgsqlCommand cmd = connection.CreateCommand())
+                    {
+                        cmd.CommandText = UtilsContextDatabase.ToDescriptionString(Packages.pkg.esq_usuarios) + "get_menu_by_cod_aplicacion";
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.Add("i_cod_usuario", NpgsqlDbType.Bigint).Value = request.cod_usuario;
+                        cmd.Parameters.Add("i_cod_aplicacion", NpgsqlDbType.Bigint).Value = request.cod_aplicacion;
+
+                        cmd.Parameters.Add(new NpgsqlParameter("o_cursor", NpgsqlDbType.Refcursor) { Direction = ParameterDirection.InputOutput, Value = "o_cursor_one" });
+                        response = cmd.ExecuteNonQuery();
+                    }
+                    var result = Enumerable.Empty<Menu>().AsQueryable();
+                    Menu resultResponse = new Menu();
+                    using (NpgsqlCommand cmd1 = connection.CreateCommand())
+                    {
+                        cmd1.CommandText = "fetch all in \"o_cursor_one\"";
+                        cmd1.CommandType = CommandType.Text;
+
+                        result = _context.ExecuteList<Menu>(cmd1, ref error);
+                        scope.Complete();
+
+                        if (error?.Length > 0)
+                        {
+                            resultResponse.mensaje_logica = error;
+                            result = result!.Append(resultResponse);
+                        }
+                    }
+                    return Task.FromResult(result);
+                }
             }
 
         }

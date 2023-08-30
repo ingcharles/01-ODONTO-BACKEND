@@ -24,5 +24,9 @@ namespace OdontoBackend.Aplicacion.Mappers.Contracts
         public IQueryable<User> UserQueryToUserByCod(Task<UserByCodQuery> source);
 
         public IQueryable<UserViewModel> UserQueryFromUserByCod(Task<User> source);
-      }
+
+        public IQueryable<Menu> MenuQueryToMenuByCodAplicacion(Task<MenuByCodAplicacionQuery> source);
+        public IQueryable<MenuViewModel> MenuQueryFromMenuByCodAplicacion(Task<List<Menu>> source);
+
+    }
 }

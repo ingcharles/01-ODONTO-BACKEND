@@ -150,5 +150,40 @@ namespace OdontoBackend.Aplicacion.Mappers
             }.AsQueryable();
         }
 
+        public IQueryable<Menu> MenuQueryToMenuByCodAplicacion(Task<MenuByCodAplicacionQuery> source)
+        {
+            return new List<Menu>
+            {
+                new Menu
+                {
+                    cod_aplicacion = source.Result.codigoUsuario,
+                    cod_usuario = source.Result.codigoAplicacion
+                }
+            }.AsQueryable();
+        }
+
+        public IQueryable<MenuViewModel> MenuQueryFromMenuByCodAplicacion(Task<List<Menu>> source)
+        {
+            var aplicacionList = source.Result;
+            var aplicacion = new List<MenuViewModel>();
+            foreach (var item in aplicacionList)
+            {
+                aplicacion.Add(new MenuViewModel
+                {
+                    codigo = item.cod_menu,
+                    nombre = item.nom_menu,
+                    descripcion = item.des_menu,
+                    icono = item.ico_menu,
+                    link = item.lin_menu,
+                    codigoPadre = item.cod_menu_padre,
+                    estado = item.est_menu,
+                    mensajeLogica = item.mensaje_logica
+
+                });
+            }
+            return aplicacion.AsQueryable();
+
+
+        }
     }
 }

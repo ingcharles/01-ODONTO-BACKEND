@@ -16,7 +16,9 @@ namespace OdontoBackend.Common.Logs
             this.loggerName = name;
             loggerConfig = config;
         }
+#pragma warning disable CS8633 // La nulabilidad de las restricciones del parámetro de tipo no coincide con las restricciones del parámetro de tipo del método de interfaz implementado de forma implícita
         public IDisposable BeginScope<TState>(TState state)
+#pragma warning restore CS8633 // La nulabilidad de las restricciones del parámetro de tipo no coincide con las restricciones del parámetro de tipo del método de interfaz implementado de forma implícita
         {
             return null;
         }
