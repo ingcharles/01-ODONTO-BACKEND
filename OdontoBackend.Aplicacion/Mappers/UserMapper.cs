@@ -183,7 +183,6 @@ namespace OdontoBackend.Aplicacion.Mappers
             }
             return aplicacion.AsQueryable();
 
-
         }
     }
 }
