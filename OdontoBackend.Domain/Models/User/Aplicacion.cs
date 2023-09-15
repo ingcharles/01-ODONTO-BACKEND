@@ -17,6 +17,7 @@ namespace OdontoBackend.Domain.Models.User
         public string col_aplicacion { get; set; } = default!;
         public string nmo_aplicacion { get; set; } = default!;
         public Int32 est_aplicacion { get; set; } = default!;
+        public long? cod_usuario { get; set; } = default!;
         public string mensaje_logica { get; set; } = default!;
     }
 }

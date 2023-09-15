@@ -55,7 +55,8 @@ namespace OdontoBackend.Aplicacion.Mappers
                     color = item.col_aplicacion,
                     nemonico = item.nmo_aplicacion,
                     estado = item.est_aplicacion,
-                    mensajeLogica = item.mensaje_logica
+                    mensajeLogica = item.mensaje_logica,
+                    codigoUsuario = item.cod_usuario
 
                 });
             }

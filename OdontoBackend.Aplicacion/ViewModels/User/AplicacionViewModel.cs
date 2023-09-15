@@ -18,5 +18,6 @@ namespace OdontoBackend.Aplicacion.ViewModels.User
         public string? nemonico { get; set; } = default!;
         public Int32? estado { get; set; } = default!;
         public string? mensajeLogica { get; set; } = default!;
+        public long? codigoUsuario { get; set; } = default!;
     }
 }

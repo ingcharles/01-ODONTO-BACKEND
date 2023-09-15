@@ -39,6 +39,7 @@ namespace OdontoBackend.Infrastructure.Repository
             {
                 using (var connection = _context.GetConnection())
                 {
+                    var response = 0;
                     using (NpgsqlCommand cmd = connection.CreateCommand())
                     {
                         cmd.CommandText = UtilsContextDatabase.ToDescriptionString(Packages.pkg.esq_usuarios) + "get_user_by_ci_pas";
@@ -46,29 +47,27 @@ namespace OdontoBackend.Infrastructure.Repository
                         cmd.Parameters.Add("i_dni_usuario", NpgsqlDbType.Varchar).Value = request.dni_usuario;
                         cmd.Parameters.Add("i_pas_usuario", NpgsqlDbType.Varchar).Value = request.pas_usuario;
                         cmd.Parameters.Add(new NpgsqlParameter("o_cursor", NpgsqlDbType.Refcursor) { Direction = ParameterDirection.InputOutput, Value = "o_cursor_one" });
-                        cmd.ExecuteNonQuery();
+                        response = cmd.ExecuteNonQuery();
                     }
-                    var response = Enumerable.Empty<User>().AsQueryable();
+                    var result = Enumerable.Empty<User>().AsQueryable();
+                    var resultResponse = new User();
                     using (NpgsqlCommand cmd1 = connection.CreateCommand())
                     {
-                        //cmd.CommandText = "fetch all in \"<unnamed portal 1>\"";
                         cmd1.CommandText = "fetch all in \"o_cursor_one\"";
                         cmd1.CommandType = CommandType.Text;
 
 
-                        response = _context.ExecuteListWithOneClass<User>(cmd1, ref error, new List<RefreshToken>());
+                        result = _context.ExecuteListWithOneClass<User>(cmd1, ref error, new List<RefreshToken>());
                         scope.Complete();
-                        //_context.CloseConnection(connection);
-                        //error = (OracleString)cmd.Parameters["O_ERROR"].Value != null ? (string)(OracleString)cmd.Parameters["O_ERROR"].Value
-                        //    : "";
-                        //if (error?.Length > 0) throw new Exception(error);
-                        if (error?.Length > 0)
+
+                        if (response == -1 && error?.Length > 0)
                         {
-                            request.mensaje_logica = "Usuario no encontrado";
+                            resultResponse.mensaje_logica = "Usuario no encontrado";
+                            result = result!.Append(resultResponse);
                         }
-                        response = response is null ? response.Append(request) : response;
                     }
-                    return Task.FromResult(response);
+                    return Task.FromResult(result);
+
                     //return Task.FromResult(response.Count() > 0 ? response : request);
                     // return Task.FromResult(response.Count() > 0 ? response : default!);
                     //     error = (OracleString)cmd.Parameters["O_ERROR"].Value != null ? (string)(OracleString)cmd.Parameters["O_ERROR"].Value
@@ -385,7 +384,6 @@ namespace OdontoBackend.Infrastructure.Repository
 
         public Task<IQueryable<Menu>> GetMenuByCodAplicacion(Menu request)
         {
-
             using (var scope = new TransactionScope())
             {
                 using (var connection = _context.GetConnection())
@@ -402,16 +400,15 @@ namespace OdontoBackend.Infrastructure.Repository
                         response = cmd.ExecuteNonQuery();
                     }
                     var result = Enumerable.Empty<Menu>().AsQueryable();
-                    Menu resultResponse = new Menu();
+                    var resultResponse = new Menu();
                     using (NpgsqlCommand cmd1 = connection.CreateCommand())
                     {
                         cmd1.CommandText = "fetch all in \"o_cursor_one\"";
                         cmd1.CommandType = CommandType.Text;
-
                         result = _context.ExecuteList<Menu>(cmd1, ref error);
                         scope.Complete();
 
-                        if (error?.Length > 0)
+                        if (response==-1 && error?.Length > 0)
                         {
                             resultResponse.mensaje_logica = error;
                             result = result!.Append(resultResponse);

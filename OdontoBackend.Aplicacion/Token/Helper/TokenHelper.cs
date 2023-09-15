@@ -27,7 +27,7 @@ namespace OdontoBackend.Services.Api.Configurations.Token.Helper
                 Subject = claimsIdentity,
                 Issuer = Issuer,
                 Audience = Audience,
-                Expires = DateTime.UtcNow.AddMinutes(1),// DateTime.Now.AddMinutes(301),//5 HORAS,//DateTime.Now.AddMinutes(5),
+                Expires = DateTime.UtcNow.AddMinutes(10),// DateTime.Now.AddMinutes(301),//5 HORAS,//DateTime.Now.AddMinutes(5),
                 SigningCredentials = signingCredentials,
             };
             Debug.WriteLine(DateTime.UtcNow);
